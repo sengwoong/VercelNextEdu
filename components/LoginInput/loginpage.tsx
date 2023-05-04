@@ -64,7 +64,7 @@ redirect('/home');
   return (
     
     <div className="relative h-screen w-screen  bg-center bg-fixed bg-cover">
-      <Image src={"/images/BGLogin.png"}  alt="login" className='fixed h-screen w-screen  bg-center bg-fixed bg-cover'>
+      <Image src={"/images/BGLogin.png"}  alt="login" className='-z-10 fixed h-screen w-screen  bg-center bg-fixed bg-cover'>
            
 
       </Image>
