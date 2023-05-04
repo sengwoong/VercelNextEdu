@@ -1,31 +1,27 @@
-
 import redis from "@/redis";
 import { Message } from "@/typings";
 import { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from "next/server";
 
 type Data = {
   messages: Message[];
 }
 
 type ErrorData = {
-  body: String;
+  body: string;
 }
 
-
-
-
-export async function GET(
-  req: Request,
+export default async function handler(
+  req: NextApiRequest,
   res: NextApiResponse<Data | ErrorData>
 ) {
+  const page = parseInt(req.query.page as string) || 1;
   const messageRes = await redis!.hgetall('messages');
   const messages: Message[] = messageRes 
     ? Object.values(messageRes)
       .map((message) => message as Message)
       .sort((a, b) => a.created_at - b.created_at)
     : [];
-  return NextResponse.json({ messages });
+  return res.json({ messages });
 }
 
 

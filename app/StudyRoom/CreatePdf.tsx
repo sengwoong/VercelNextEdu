@@ -49,8 +49,8 @@ useEffect(() => {
           </>
         ) : (
           <>
-            <PdfMenuFirst />
-            <PdfViewFirst />
+            <PdfMenuFirst  />
+            <PdfViewFirst  />
           </>
         )}
       </div>
