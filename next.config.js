@@ -23,27 +23,13 @@ const nextConfig = {
         source:'/',
         destination:'/home',
         permanent:true
-      },
-      {
-        source: '/:path*',
-        destination: 'https://poto-next-edu-s94p.vercel.app/:path*',
-        permanent: true,
-      },
+      }
+  
     ]
  
     
   },
-  // async rewrites(){
-  //   return[
-  //     {
-  //       source:'/pdfStudy/:username',
-  //       destination:'/home/StudyRoom/:username'
-     
-  //     }
-    // ]
  
-    
-  // }
 };
 
 module.exports = nextConfig;

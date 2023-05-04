@@ -1,7 +1,8 @@
 import {Message}from "../typings"
 
 const fetcherMessages = async ()=>{
-    const res = await fetch("http://localhost:3000/api/getMessages")
+    const host = window.location.host;
+const res = await fetch(`http://${host}/api/getNewMessage`);
     const data = await res.json()
     const messages: Message[] = data.messages;
 
