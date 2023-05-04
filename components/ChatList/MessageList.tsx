@@ -9,7 +9,7 @@ import useSWRSubscription from "swr";
 import Messagecomponents from "./Messagecomponents";
 import { AuthUser } from "@/model/user";
 import { usePathname } from "next/navigation";
-import fetcherMessages from "@/utils/fetchMessages";
+import fetcherMessages from "@/utils/fetchGetMessages";
 
 
 

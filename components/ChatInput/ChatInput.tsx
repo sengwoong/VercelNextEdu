@@ -5,7 +5,7 @@ import { Message } from "@/typings";
 import { profile } from "console";
 import React, { FormEvent, useState ,useRef, useContext} from "react";
 import {v4 as uuid} from 'uuid';
-import fetcher from '@/utils/fetchMessages';
+import fetcher from '@/utils/fetchGetMessages';
 
 import { useUnderScrollerInChat } from '@/components/ChatList/useUnderScrollerInChat';
 import { AuthUser } from '@/model/user';
@@ -19,7 +19,7 @@ type Props = {
 function ChatInput({ user }: Props) {
   const {counter, setCounter } = useContext(useUnderScrollerInChat);
   const [input, setInput] = useState("");
-  const {data:messages,error,mutate} = useSwr('api/addMessages',fetcher);
+  const {data:messages,error,mutate} = useSwr('api/addMessage',fetcher);
   const InputClick = useRef<HTMLInputElement|null>(null);
   //console.log(messages,"addMessages머임")
   

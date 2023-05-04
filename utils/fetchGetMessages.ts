@@ -1,6 +1,6 @@
 import {Message}from "../typings"
 
-const fetcherMessages = async ()=>{
+const fetcherGetMessages = async ()=>{
   const protocol = window.location.protocol;
   const host = window.location.host.split('/')[0];
   const res = await fetch(`${protocol}://${host}/api/getNewMessage`,
@@ -19,4 +19,4 @@ const fetcherMessages = async ()=>{
 
 }
 
-export default fetcherMessages;
+export default fetcherGetMessages;
