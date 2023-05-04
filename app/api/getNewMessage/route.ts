@@ -1,4 +1,5 @@
-import { redis } from "@/redis";
+
+import redis from "@/redis";
 import { Message } from "@/typings";
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextResponse } from "next/server";

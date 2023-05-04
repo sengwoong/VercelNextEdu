@@ -1,8 +1,8 @@
-import {redis} from "@/redis";
+import redis from "@/redis";
 import { Message } from "@/typings";
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextRequest, NextResponse } from "next/server";
-
+//
 
 type Data = {
   message: Message;
