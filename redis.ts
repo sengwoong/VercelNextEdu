@@ -4,10 +4,13 @@ import { Redis } from '@upstash/redis';
 
 let redisClient: Redis | null = null;
 
-if (process.env.Upstashtoken) {
+
+
+
+if (process.env.UPSTASH_REDIS_REST_TOKEN && process.env.UPSTASH_REDIS_REST_URL  ) {
   redisClient = new Redis({
-    url: 'https://apn1-fancy-dog-33363.upstash.io',
-    token: process.env.Upstashtoken,
+    url: process.env.UPSTASH_REDIS_REST_URL,
+    token: process.env.UPSTASH_REDIS_REST_TOKEN,
   });
 } else {
   console.error('REDIS_TOKEN environment variable is not set.');

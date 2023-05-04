@@ -11,6 +11,9 @@ type ErrorData = {
   body: String;
 }
 
+
+
+
 export async function GET(
   req: Request,
   res: NextApiResponse<Data | ErrorData>
