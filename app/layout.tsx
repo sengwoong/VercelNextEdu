@@ -27,8 +27,7 @@ export default function RootLayout({
        
         </ReduxProvider>
         </AuthContext>
-  <div
-  id='portal'></div>
+  <div id='portal'></div>
       </body>
     </html>
   );

@@ -1,0 +1,30 @@
+# Environment variables declared in this file are automatically made available to Prisma.
+# See the documentation for more detail: https://pris.ly/d/prisma-schema#accessing-environment-variables-from-the-schema
+
+# Prisma supports the native connection string format for PostgreSQL, MySQL, SQLite, SQL Server, MongoDB and CockroachDB.
+# See the documentation for all the connection string options: https://pris.ly/d/connection-strings
+
+
+
+DATABASE_URL="mongodb+srv://djsdjdyd123:djsdjdyd123@photofolio.gwblcno.mongodb.net/test"
+NEXTAUTH_JWT_SECRET="NEXTAUTH_JWT_SECRET"
+NEXTAUTH_SECRET="NEXTAUTH_SECRET"
+
+GITHUB_ID=1a936beb7638813e5bde
+GITHUB_SECRET=e9de51ac8fdcf4f3588179cd4ef5c5b240317a1a
+GOOGLE_OAUTH_ID=254711568908-e16fnkbc6mm7p30i36goaf5uhj66a89l.apps.googleusercontent.com
+GOOGLE_OAUTH_SECRET=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
+
+
+UpstashUrl ='apn1-fancy-dog-33363.upstash.io',
+UpstashPort = '33363',
+UpstashPassword= '7adae3808f1944b1b560abf6327e4f6b'
+REDIS_URL="redis://default:7adae3808f1944b1b560abf6327e4f6b@apn1-fancy-dog-33363.upstash.io:33363"
+ Upstashurl='https://apn1-fancy-dog-33363.upstash.io',
+ Upstashtoken="AYJTACQgMjg1NDIyMWItNmU2Zi00NDZmLTk3MzItMmJiNDk5NzVjZjg4N2FkYWUzODA4ZjE5NDRiMWI1NjBhYmY2MzI3ZTRmNmI="
+
+
+SANITY_PROJECT_ID=vnhsnya0
+SANITY_DATASET=production
+  SANITY_SECRET_TOKEN=skGiH9IA0KXCoSOHfv1TF3TtH7NDA9RQltF6AZrRYUdAOY42UGTr4rYjbjatBvs5e56Sx82hiDXXOPu4HY9b71hZuDid9vUi1MWrAxdnUEIeyjNdM12mylzGtPYtDyvOYhJhnYKBeVu1ky7uFlFgtFnsMqPCZeUBA5cppafnXnDPcChZA7Hs
+

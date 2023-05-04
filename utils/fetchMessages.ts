@@ -2,7 +2,7 @@ import {Message}from "../typings"
 
 const fetcherMessages = async ()=>{
 
-const res = await fetch(`/api/getNewMessage`,
+const res = await fetch(`api/getNewMessage`,
 {
     method: 'GET'
   });

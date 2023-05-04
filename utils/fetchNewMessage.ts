@@ -1,18 +1,16 @@
-import {Message}from "../typings"
+import {Message} from "../typings";
 
-const fetcherMessage = async ()=>{
-    const host = window.location.host;
-    const res = await fetch(`/api/getNewMessage`,{
-        method: 'POST',
-    });
-    const data = await res.json()
-    const messages: Message[] = data.messages;
+const fetcherMessage = async () => {
+  const protocol = window.location.protocol;
+  const host = window.location.host;
+  const res = await fetch(`${protocol}://${host}/api/getNewMessage`, {
+    method: 'POST',
+  });
+  const data = await res.json();
+  const messages: Message = data.messages;
 
-    console.log(res)
-    return messages
-
-}
-
-
+  console.log("fetcherMessages");
+  return messages;
+};
 
 export default fetcherMessage;
