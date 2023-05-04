@@ -64,10 +64,10 @@ redirect('/home');
   return (
     
     <div className="relative h-screen w-screen  bg-center bg-fixed bg-cover">
-      <Image src={"/images/BGLogin.png"}  alt="login" className='-z-10 fixed h-screen w-screen  bg-center bg-fixed bg-cover'>
-           
+      <Image src="/images/BGLogin.png" alt="login" width={1500} height={1080} className="-z-10 fixed h-screen w-screen bg-center bg-fixed bg-cover" />
+ 
 
-      </Image>
+  
       <div className="bg-black w-full h-full lg:bg-opacity-50">
         <nav className="px-12 py-5">
         <Link href='/home' aria-label='Home'>

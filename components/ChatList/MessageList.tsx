@@ -27,7 +27,7 @@ function MessageList({ user }: Props): JSX.Element {
 
 
   const { data: messages, error, mutate } = useSWR<Message[]>(
-    "api/getNewMessages",
+    "api/getNewMessage",
     fetcherMessages,
     {
       refreshInterval:500,

@@ -1,7 +1,7 @@
 import redis from "@/redis";
 import { Message } from "@/typings";
 import { NextApiRequest, NextApiResponse } from "next";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { json } from "stream/consumers";
 
 type Data = {
@@ -12,7 +12,7 @@ type ErrorData = {
 };
 
 export async function GET(
-  req: NextApiRequest,
+  req: NextRequest | Request,
   res: NextApiResponse<Data | ErrorData>
 ) {
   const messageRes = await redis.hgetall("messages");
