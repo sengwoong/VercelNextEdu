@@ -3,6 +3,7 @@ import { Message } from "@/typings";
 import { NextApiRequest, NextApiResponse } from "next";
 import { NextRequest, NextResponse } from "next/server";
 
+
 type Data = {
   message: Message;
 }
@@ -11,7 +12,7 @@ type ErrorData = {
   body: string;
 }
 
-export async function POST(req: NextRequest) {
+export async function POST(req: Request,res: NextApiResponse<Data | ErrorData>) {
  
   const { message } = await req.json();
   const newMessage: Message[] = {
@@ -35,7 +36,8 @@ NextResponse.json({ message: newMessage })
   
 
 
-  console.log(newMessage);
+  // console.log(newMessage);
+  // console.log(newMessage);
 }
 
 

@@ -36,7 +36,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "**/index.tsx"
-  ],
+, "app/api/addMessage"  ],
   "exclude": [
     "node_modules","sanity-studio"
   ],
