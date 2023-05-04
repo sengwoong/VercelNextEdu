@@ -11,3 +11,5 @@ export async function GET(req: NextRequest, context: Context) {
   return searchUsers(context.params.keyword)
     .then((data) => NextResponse.json(data));
 }
+
+//

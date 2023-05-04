@@ -134,7 +134,7 @@ export async function createPost(userId: string, text: string, file: Blob) {
     .then((result) => {
       return client.create(
         {
-          _type: 'user',
+          _type: 'POST',
           author: { _ref: userId },
           photo: { asset: { _ref: result.document._id } },
           comments: [
@@ -157,7 +157,7 @@ export async function createUser(Username: string, Name: string, Email:string, I
   formData.append('file', Image);
 
   return fetch(`${assetsURL}`, {
-    method: 'POST',
+    method: 'user',
     headers: {
       authorization: `Bearer ${process.env.SANITY_SECRET_TOKEN}`,
     },
@@ -178,6 +178,9 @@ export async function createUser(Username: string, Name: string, Email:string, I
       }, { autoGenerateArrayKeys: true });
     });
 }
+
+
+
 
 
 

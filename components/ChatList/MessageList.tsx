@@ -30,7 +30,7 @@ function MessageList({ user }: Props): JSX.Element {
     "api/getNewMessage",
     fetcherMessages,
     {
-      refreshInterval:500,
+      refreshInterval:1000,
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
     }
