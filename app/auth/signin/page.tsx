@@ -36,7 +36,14 @@ export default async function SignPage({
    {/**/}
    <Auth  providers={providers} callbackUrl={callbackUrl ?? '/home'} />  
 
+   <div className='bg-white rounded-2xl'>
+            <Signin providers={providers} callbackUrl={callbackUrl ?? '/home'} />
+            </div>
+
+
       {/* <Signin providers={providers} callbackUrl={callbackUrl ?? '/home'} /> */}
     </section>
+
+    
   );
 }
