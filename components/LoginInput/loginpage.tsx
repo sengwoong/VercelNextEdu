@@ -9,6 +9,7 @@ import Input from './input';
 import { redirect } from 'next/navigation';
 import Signin from './Sigin';
 import Link from 'next/link';
+import ColorButton from '../ui/ColorButton';
 
 type Props = {
   providers: Record<string, ClientSafeProvider>;
@@ -103,7 +104,16 @@ redirect('/home');
             <div className="flex flex-row items-center gap-4 mt-8 justify-center">
            
 
-
+            <>
+      {Object.values(providers).map(({ name, id }) => (
+        <ColorButton
+          key={id}
+          text={`Sign In with ${name}`}
+          onClick={() => signIn(id, { callbackUrl })}
+          size='big'
+        />
+      ))}
+    </>
 
               <div className='bg-white rounded-2xl'>
             <Signin providers={providers} callbackUrl={callbackUrl ?? '/home'} />
