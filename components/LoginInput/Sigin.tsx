@@ -1,30 +1,31 @@
 "use client"
 import { ClientSafeProvider, signIn } from 'next-auth/react';
-import ColorButton from '../ui/ColorButton';
+import { FcGoogle } from 'react-icons/fc';
 
 type Props = {
   providers: ClientSafeProvider[];
   callbackUrl: string;
 };
 
-export default function Signin({ providers, callbackUrl }: Props) {
-  const handleSignIn = (id: string) => {
-    signIn(id, { callbackUrl });
-  };
 
-  return (
-    <>
-      {providers.map(({ name, id }) => (
-        <ColorButton
-          key={id}
-          text={`Sign In with ${name}`}
-          onClick={() => handleSignIn(id)}
-          size='big'
-        />
-      ))}
-    </>
-  );
+
+
+export default function Signin({ providers, callbackUrl }: Props) {
+  //console.log(providers);
+  
+  const googleProvider = Object.values(providers).find(provider => provider.name === 'Google');
+  
+  if (googleProvider) {
+    return (
+      <div onClick={() => signIn(googleProvider.id, { callbackUrl })}>
+        <FcGoogle  className='w-10 h-10'/>
+      </div>
+    );
+  }
+
+  return null;
 }
+
 
 
 // import { ClientSafeProvider, signIn } from 'next-auth/react';

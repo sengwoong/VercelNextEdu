@@ -61,7 +61,7 @@ redirect('/home');
   }, [email, name, password, login]);
 
   return (
-    <div className="relative h-screen w-screen bg-[url('/images/hero.jpg')] bg-no-repeat bg-center bg-fixed bg-cover">
+    <div className="relative h-screen w-screen bg-[url('/images/BGLogin.png')] bg-no-repeat bg-center bg-fixed bg-cover">
       <div className="bg-black w-full h-full lg:bg-opacity-50">
         <nav className="px-12 py-5">
         <Link href='/home' aria-label='Home'>
