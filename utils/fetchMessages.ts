@@ -1,8 +1,9 @@
 import {Message}from "../typings"
 
 const fetcherMessages = async ()=>{
-
-const res = await fetch(`api/getNewMessage`,
+  const protocol = window.location.protocol;
+  const host = window.location.host;
+  const res = await fetch(`${protocol}://${host}/api/getNewMessage`,
 {
     method: 'GET'
   });
