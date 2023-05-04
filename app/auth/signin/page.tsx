@@ -34,7 +34,7 @@ export default async function SignPage({
   return (
     <section>
       <Auth providers={providersArr} callbackUrl={callbackUrl ?? '/home'} />
-      <Signin providers={providersArr} callbackUrl={callbackUrl ?? '/home'} /> 
+      
     </section>
   );
 }
