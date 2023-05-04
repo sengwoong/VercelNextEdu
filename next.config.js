@@ -23,7 +23,12 @@ const nextConfig = {
         source:'/',
         destination:'/home',
         permanent:true
-      }
+      },
+      {
+        source: '/:path*',
+        destination: 'https://poto-next-edu-s94p.vercel.app/:path*',
+        permanent: true,
+      },
     ]
  
     
