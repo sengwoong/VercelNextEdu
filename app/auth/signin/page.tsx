@@ -1,5 +1,3 @@
-
-
 import Signin from '@/components/LoginInput/Sigin';
 import Auth from '@/components/LoginInput/loginpage';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
@@ -28,18 +26,14 @@ export default async function SignPage({
     redirect('/home');
   }
 
-  const providers = (await getProviders()) ?? {};
+  const providers = await getProviders();
+  // providers가 null이거나 undefined인 경우 빈 배열로 초기화합니다.
+  const providersArr = providers ? Object.values(providers) : [];
 
   return (
     <section>
-   {/* <Auth/>  */}
-   {/**/}
-   <Auth  providers={providers} callbackUrl={callbackUrl ?? '/home'} />  
-
-
-      <Signin providers={providers} callbackUrl={callbackUrl ?? '/home'} /> 
+      <Auth providers={providersArr} callbackUrl={callbackUrl ?? '/home'} />
+      <Signin providers={providersArr} callbackUrl={callbackUrl ?? '/home'} /> 
     </section>
-
-    
   );
 }
