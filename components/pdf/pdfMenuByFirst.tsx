@@ -6,13 +6,14 @@ import { useSelector,useDispatch } from 'react-redux';
 import {AppDispatch,RootState} from '@/store/store'
 import { pdfActions } from '@/slices/pdfSlice';
 import { PageSelector } from '@/components/pdf/PageSelector';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
-const PdfMenu=() =>{
+function PdfMenu() {
   const { upNumPages:disposeupNumPages, downNumPages:disposedownNumPages, setPageNumber:disposesetPageNumber,downPageScale:disposedownPageScale,upPageScale:disposeupPageScale} = pdfActions;
   const { pageNumber:ReduxpageNumber,  pageScale:ReduxpageScale} = useSelector((state:RootState)=>{return state.pdf})
   const dispatch =useDispatch<AppDispatch>()
+  
   const {value:ViewType,setValue:SetViewType } = useContext(PageSelector);
-
 
   const url:string = '/somefile.pdf';
 
@@ -81,7 +82,7 @@ const PdfMenu=() =>{
         }}
         onKeyDown={(event) => {
           if (event.key === "Enter") {
-             //console.log(inputs)
+           // console.log(inputs)
              dispatch(disposesetPageNumber(inputs))
      
           }
@@ -99,7 +100,7 @@ const PdfMenu=() =>{
                 className="ml-2 bg-blue-500 text-white py-1 px-3 rounded-md text-sm"
                 onClick={()=>{
                     
-                  pageMax === pageNumber ?  pageNumber :dispatch(  disposeupNumPages(1))}}>
+                  pageMax-1 < pageNumber ?  pageNumber :dispatch(  disposeupNumPages(1))}}>
               
 
 
@@ -110,7 +111,7 @@ const PdfMenu=() =>{
               <button
                 className="ml-2 bg-blue-500 text-white py-1 px-3 rounded-md text-sm"
                 onClick={() => {
-                  pageNumber === 1 ? pageNumber  : dispatch( disposedownNumPages(1));
+                  pageNumber-1 < 2 ? pageNumber  : dispatch( disposedownNumPages(1));
                 }}
               >
                 
@@ -136,6 +137,8 @@ const PdfMenu=() =>{
               >
                 -
               </button>
+
+
               <button
                 className="ml-2 bg-blue-500 text-white py-1 px-3 rounded-md text-sm"
                 onClick={()=>{
@@ -146,6 +149,8 @@ const PdfMenu=() =>{
 
               SetViewType
               </button>
+
+           
             </div>
       
           </div>

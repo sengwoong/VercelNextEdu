@@ -6,6 +6,7 @@ import { useSelector,useDispatch } from 'react-redux';
 import {AppDispatch,RootState} from '@/store/store'
 import { pdfActions } from '@/slices/pdfSlice';
 import { PageSelector } from '@/components/pdf/PageSelector';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 function PdfMenu() {
   const { upNumPages:disposeupNumPages, downNumPages:disposedownNumPages, setPageNumber:disposesetPageNumber,downPageScale:disposedownPageScale,upPageScale:disposeupPageScale} = pdfActions;
