@@ -10,6 +10,7 @@ import { redirect } from 'next/navigation';
 import Signin from './Sigin';
 import Link from 'next/link';
 import ColorButton from '../ui/ColorButton';
+import Image from 'next/image';
 
 type Props = {
   providers:  ClientSafeProvider[];
@@ -61,7 +62,12 @@ redirect('/home');
   }, [email, name, password, login]);
 
   return (
-    <div className="relative h-screen w-screen bg-[url('/images/BGLogin.png')] bg-no-repeat bg-center bg-fixed bg-cover">
+    
+    <div className="relative h-screen w-screen  bg-center bg-fixed bg-cover">
+      <Image src={"/images/BGLogin.png"}  alt="login" className='fixed h-screen w-screen  bg-center bg-fixed bg-cover'>
+           
+
+      </Image>
       <div className="bg-black w-full h-full lg:bg-opacity-50">
         <nav className="px-12 py-5">
         <Link href='/home' aria-label='Home'>
