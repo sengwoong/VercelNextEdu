@@ -34,10 +34,10 @@ export default async function SignPage({
     <section>
    {/* <Auth/>  */}
    {/**/}
-   <Auth  providers={providers} callbackUrl={callbackUrl ?? '/home'} />  
+   {/* <Auth  providers={providers} callbackUrl={callbackUrl ?? '/home'} />   */}
 
 
-      {/* <Signin providers={providers} callbackUrl={callbackUrl ?? '/home'} /> */}
+      <Signin providers={providers} callbackUrl={callbackUrl ?? '/home'} /> 
     </section>
 
     
