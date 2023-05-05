@@ -1,28 +1,63 @@
+// zrange 또는 zrangebyscore  zrangebyscore는 주어진 범위 내에서 
 import redis from "@/redis";
 import { Message } from "@/typings";
 import { NextApiRequest, NextApiResponse } from "next";
+import { NextResponse } from "next/server";
+
+
 
 type Data = {
   messages: Message[];
-}
+};
 
 type ErrorData = {
-  body: string;
-}
+  body: String;
+};
 
-export default async function handler(
-  req: NextApiRequest,
+export async function GET(
+  req: Request,
   res: NextApiResponse<Data | ErrorData>
 ) {
-  const page = parseInt(req.query.page as string) || 1;
-  const messageRes = await redis!.hgetall('messages');
-  const messages: Message[] = messageRes 
-    ? Object.values(messageRes)
-      .map((message) => message as Message)
-      .sort((a, b) => a.created_at - b.created_at)
-    : [];
-  return res.json({ messages });
+  const messagesKey = "messages";
+
+  const messages = await redis!.zrange(messagesKey, 0, -1); // 메시지 ID를 시간 역순으로 조회
+
+
+  return NextResponse.json({ messages });
 }
+
+
+
+
+
+
+// type Data = {
+//   messages: Message[];
+// }
+
+// type ErrorData = {
+//   body: String;
+// }
+
+
+
+
+// export async function GET(
+//   req: Request,
+//   res: NextApiResponse<Data | ErrorData>
+// ) {
+   // const pipeline = redis!.pipeline(); // 파이프라인 사용
+
+//   const messageRes = await redis!.hgetall('messages');
+//   const messages: Message[] = messageRes 
+//     ? Object.values(messageRes)
+//       .map((message) => message as Message)
+//       .sort((a, b) => a.created_at - b.created_at)
+//     : [];
+  // const messagesRes = await pipeline.exec(); // 파이프라인 실행
+
+//   return NextResponse.json({ messages });
+// }
 
 
 

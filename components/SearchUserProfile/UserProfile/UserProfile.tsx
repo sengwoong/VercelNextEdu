@@ -30,7 +30,7 @@ export default function UserProfile({ user }: Props) {
           ))}
         </ul>
         <p className='text-xl font-bold text-center md:text-start'>{name}</p>
-        <Link href={`/StudyRoom/${username}`}aria-label='Home' prefetch >
+        <Link href={`/StudyRoom/${username}`}aria-label='Home' >
         <p className='text-xl font-bold text-center md:text-start'>onAir</p>
         </Link>
       </div>

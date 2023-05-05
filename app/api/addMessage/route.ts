@@ -4,41 +4,89 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { NextRequest, NextResponse } from "next/server";
 //
 
+
+
+
 type Data = {
   message: Message;
-}
+};
 
 type ErrorData = {
   body: string;
-}
+};
 
-export async function POST(req: Request,res: NextApiResponse<Data | ErrorData>) {
- 
+export async function POST(req: Request, res: NextApiResponse<Data | ErrorData>) {
   const { message } = await req.json();
-  const newMessage: Message[] = {
+
+  if (message === undefined && message === null) {
+    return res.status(400).json({ body: "Bad Request" });
+  }
+
+  const newMessage: Message = {
     ...message,
     created_at: Date.now(),
   };
 
   if (!redis) {
-    return new Response('Redis is not initialized', { status: 500 });
+    return res.status(500).json({ body: "Redis is not initialized" });
   }
+  // 'messages', message.id, JSON.stringify(newMessage)
+  const messagesKey = "messages";
+  const score = newMessage.created_at;
+  const member = JSON.stringify(newMessage);
 
-  
-  if (message === undefined && message === null) {
-        return new Response('Bad Request', { status: 400 });
-      }
+  await redis!.zadd(messagesKey, { score, member });
 
-      await redis!.hsetnx('messages', message.id, JSON.stringify(newMessage));
-
-
-NextResponse.json({ message: newMessage })
-  
-
-
-  // console.log(newMessage);
-  // console.log(newMessage);
+  res.status(200).json({ message: newMessage });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// type Data = {
+//   message: Message;
+// }
+
+// type ErrorData = {
+//   body: string;
+// }
+
+// export async function POST(req: Request,res: NextApiResponse<Data | ErrorData>) {
+ 
+//   const { message } = await req.json();
+//   const newMessage: Message[] = {
+//     ...message,
+//     created_at: Date.now(),
+//   };
+
+//   if (!redis) {
+//     return new Response('Redis is not initialized', { status: 500 });
+//   }
+
+  
+//   if (message === undefined && message === null) {
+//         return new Response('Bad Request', { status: 400 });
+//       }
+
+//       await redis!.hsetnx('messages', message.id, JSON.stringify(newMessage));
+
+
+// NextResponse.json({ message: newMessage })
+  
+
+
+  // console.log(newMessage);
+  // console.log(newMessage);
+//}
 
 
 // export async function POST(req: NextRequest) {
