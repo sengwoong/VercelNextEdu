@@ -10,6 +10,7 @@ import Messagecomponents from "./Messagecomponents";
 import { AuthUser } from "@/model/user";
 import { usePathname } from "next/navigation";
 import fetcherMessages from "@/utils/fetchGetMessages";
+import redis from "@/redis";
 
 
 
@@ -25,8 +26,6 @@ type Props = {
 function MessageList({ user }: Props): JSX.Element {
 
  
-
-  
   const { data: messages, error, mutate } = useSWR<Message[]>(
     "/api/getNewMessage",
     fetcherMessages,
@@ -35,7 +34,20 @@ function MessageList({ user }: Props): JSX.Element {
       revalidateOnFocus: false,
       revalidateOnReconnect: false,
     }
+
   );
+
+
+
+  (async () => {
+    try {
+      await redis.ping();
+      console.log('Upstash Redis connected successfully.');
+    } catch (error) {
+      console.error('Failed to connect to Upstash Redis.');
+    }
+  })();
+  
   console.log(messages, "최종값")
   return (
     <>

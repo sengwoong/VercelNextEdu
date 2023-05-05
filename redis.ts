@@ -1,4 +1,4 @@
-
+ 
 import https from "https";
 import { Redis } from '@upstash/redis';
 
@@ -9,6 +9,19 @@ const redis=new Redis({
 });
 
 export default redis;
+
+
+
+
+
+(async () => {
+  try {
+    await redis.ping();
+    console.log('Upstash Redis connected successfully.');
+  } catch (error) {
+    console.error('Failed to connect to Upstash Redis.');
+  }
+})();
 
 
 

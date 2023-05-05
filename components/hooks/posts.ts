@@ -67,6 +67,29 @@ export default function usePosts() {
 
 }
 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //14-8
 // optimisticData:
 // optimisticData 매개변수는 mutate 함수가 호출된 후 데이터를 최적화할 수 있게 해줍니다.
