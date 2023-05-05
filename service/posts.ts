@@ -134,7 +134,7 @@ export async function createPost(userId: string, text: string, file: Blob) {
     .then((result) => {
       return client.create(
         {
-          _type: 'POST',
+          _type: 'post',
           author: { _ref: userId },
           photo: { asset: { _ref: result.document._id } },
           comments: [
@@ -149,7 +149,6 @@ export async function createPost(userId: string, text: string, file: Blob) {
       );
     });
 }
-
 
 
 export async function createUser(Username: string, Name: string, Email:string, Image: Blob) {
