@@ -63,5 +63,99 @@ SWR , NEXT.AUTH ,REACT.SPINNER,react-multi-carousel,react-icons
    
 리엑트 아이콘을 하드코딩하는게아니라 재활용할수 있게 ui 컴포넌트 파일로 지정하였습니다.
  ![image](https://user-images.githubusercontent.com/92924243/236950054-77d86847-d115-44c5-a6e2-2fe2c2af602e.png)
+   
+    <H2 ID="AUTH">NEXT.AUTH</H2>
+   
+   ![image](https://user-images.githubusercontent.com/92924243/236951443-6b14d700-c7be-48ba-a1d3-dd53039c4ad1.png)
+   
+   13버전 지원 아직안하고있어서 12버전으로 사용하였습니다.
+   구글로로그인을 만든것은 다음과같습니다.
+   
+   '''
+   import { addUser, getUserByUsername, getUserByUsernameLoing } from '@/service/user';
+import NextAuth, { NextAuthOptions } from 'next-auth';
+import GoogleProvider from 'next-auth/providers/google';
+import { signIn } from 'next-auth/react';
+import { userInfo } from 'os';
+import Credentials from 'next-auth/providers/credentials';
+export const authOptions:NextAuthOptions = {
+  // Configure one or more authentication providers
+  providers: [
+    GoogleProvider({
+      clientId: process.env.GOOGLE_OAUTH_ID || '',
+      clientSecret: process.env.GOOGLE_OAUTH_SECRET || '',
+    }),
+
+
+  ],
+    // ...add more providers here
+  pages:{
+    signIn: '/auth/signin',
+  },
+  callbacks: {
+    async signIn({ user: { id, name, image, email } }) {
+      if (!email) {
+        return false;
+      }
+      addUser({
+        id,
+        name: name || '',
+        image,
+        email,
+        username: email.split('@')[0],
+      });
+      return true;
+    },
+    async session({ session,token}) {
+      const user = session?.user;
+      if (user) {
+        session.user = {
+          ...user,
+          username: user.email?.split('@')[0] || '',
+         id:token.id as string,
+        };
+      }
+      return session;
+    },
+    async jwt({ token, user }) {
+      if (user) {
+        token.id = user.id;
+        token.username = user.email?.split('@')[0] || '';
+      }
+      return token;
+    },
+  
+  }
+
+  
+};
+export default NextAuth(authOptions);
+
+
+   '''
+   
+   
+  <H4>코드설명은 다음과 같습니다.(어려운부분만)</H4>
+   
+   '''
+    username: user.email?.split('@')[0] || '',
+   '''
+   username이 없어서 새로운배열로 추가하여서 세션에넣어두었습니다.
+   
+   ![image](https://user-images.githubusercontent.com/92924243/236952584-f726086b-edc9-405a-8b8a-81087ffe414f.png)
+
+   위처럼 세션과 JWT로생성한 AUTH를 컨텐트로만들어서 가장상위레이아웃에 우산을 씨워주어 모두사용할수있게만듭니다.
+   
+   ![image](https://user-images.githubusercontent.com/92924243/236952732-99cdce77-eb12-4563-91c8-7cbfa3e6bbb6.png)
+
+   위처럼 우산을 씨워주면 어디든지 NEXT.AUTH가 생성한것을 유즈컨텐츠 처럼 불러올수있습니다.
+   
+  <H3></H3>
+   <H4>jwt,session</H4>
+   
+   <H3>팁</H3>
+   구글대쉬보드에 등록해야합니다.
+   
+https://console.cloud.google.com/welcome?hl=ko&_ga=2.88227035.1153804196.1683585301-1443038629.1680135679&project=coral-sanctuary-384817
 
 
