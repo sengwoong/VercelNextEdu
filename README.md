@@ -7,6 +7,7 @@
 <H1 ID="개념">#개념편</H1>
 
 <H2 ID="Sanity">Sanity 란?</H2>
+
 ![image](https://user-images.githubusercontent.com/92924243/236942423-8d8e910a-adce-484f-bfe3-7704a0fbdce4.png)
 
 ㄴSanity 는 해드리스를 지원하는 cms 플렛폼 입니다. 백엔드에서 추상화 캡슐화하여 호풀하고 쓸수있는 클라이드 기반 데이터 폴렛폼이며
@@ -15,6 +16,7 @@
 <!-- 관리자페이지설명링크 -->
 
 <H2 ID="해드리스" >해드리스란?</H2>
+
 ![image](https://user-images.githubusercontent.com/92924243/236944644-116506f8-f563-4232-bbd6-96bcf2bf49be.png)
 
 해드리스란 api 를 사용하여 호출하는방법으로 백엔드를상관하지않고 프론트요청을 통해서 마치 레고머리가 붙이고 때듯이 만들수있는것입니다.
