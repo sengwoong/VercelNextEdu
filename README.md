@@ -72,7 +72,10 @@ SWR , NEXT.AUTH ,REACT.SPINNER,react-multi-carousel,react-icons<br>
    13버전 지원 아직안하고있어서 12버전으로 사용하였습니다.<br>
    구글로로그인을 만든것은 다음과같습니다.
    <br>
+   
+   
 ```
+
    import { addUser, getUserByUsername, getUserByUsernameLoing } from '@/service/user';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
@@ -133,14 +136,19 @@ export const authOptions:NextAuthOptions = {
 export default NextAuth(authOptions);
 
 
+
 ```
+
    
    <br>
   <H4>코드설명은 다음과 같습니다.(어려운부분만)</H4>
    <br>
    
+   
 ```
+
     username: user.email?.split('@')[0] || '',
+    
 ```
 
    username이 없어서 새로운배열로 추가하여서 세션에넣어두었습니다.
@@ -155,7 +163,9 @@ export default NextAuth(authOptions);
    <br>
    
    <H3>사용방법</H3>
+   
    ```
+   
    'use client';
 
 import Link from 'next/link';
@@ -235,11 +245,13 @@ export default function AuthNavbar() {
 }
 
    ```
-    아래와같이   signOut() signIn() 을 호출해서 사용합니다<BR>
+   
+   
+    위와같이   signOut() signIn() 을 호출해서 사용합니다<BR>
     또한   const { data: session } = useSession(); 을 사용하면 CSR 일떄  세션을 사용 가능합니다.
-   ```
-   signOut() signIn()
-   ```
+    
+
+   
    
   <H3>추가로볼것</H3><br>
    <H4 ID="JWT" >jwt,session </H4><H4 ID= "ENV">ENV</H4>
