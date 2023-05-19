@@ -1,3 +1,7 @@
+
+
+![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/30484d4f-3154-49fc-b863-3a65fe488f86)
+
 https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
 
 ㄴ 개념정리
