@@ -1,0 +1,138 @@
+// "use client"
+// import { useRef, useEffect } from 'react';
+// import io from 'socket.io-client';
+
+// import browserDetails from 'webrtc-adapter';
+
+// console.log(browserDetails);
+
+
+// const socket = io('http://localhost:4000/remote-ctrl');
+
+// function Screen() {
+//   const videoRef = useRef<HTMLVideoElement | null>(null);
+//   const rtcPeerConnection = useRef<RTCPeerConnection | null>(null);
+
+//   const handleStream = (stream: MediaStream) => {
+//     console.log(stream, "stream");
+//     console.log("연결까지감");
+//     stream.getTracks().forEach((track) => {
+//       rtcPeerConnection.current?.addTrack(track, stream);
+//     });
+    
+//     console.log(videoRef.current)
+//     if (videoRef.current) {
+//       videoRef.current.srcObject = stream;
+//       videoRef.current.onloadedmetadata = () => videoRef.current?.play();
+//     }
+//     console.log("연결까지감됌");
+//   };
+
+//   const getStream = async (selectedScreen: { id: string | null }) => {
+//     if (selectedScreen.id === null) {
+//       return alert("화면을 선택해주세요");
+//     }
+//     console.log("getStream");
+//     try {
+//       console.log(selectedScreen);
+//       const stream = await navigator.mediaDevices.getUserMedia({
+//         audio: false,
+//         video: {
+//           mandatory: {
+//             chromeMediaSource: 'desktop',
+//             chromeMediaSourceId: selectedScreen.id,
+//           },
+//         } as MediaTrackConstraints,
+//       });
+
+//       handleStream(stream);
+//     } catch (e) {
+//       console.log('Error accessing media devices:', e);
+//     }
+//   };
+
+//   useEffect(() => {
+//     rtcPeerConnection.current = new RTCPeerConnection({
+//       iceServers: [
+//         { urls: "stun:stun.l.google.com:19302" },
+//         { urls: "stun:stun1.l.google.com:19302" },
+//         { urls: "stun:stun2.l.google.com:19302" },
+//       ],
+//     });
+
+//     socket.on('selectedScreen', (selectedScreen) => {
+//       console.log('Renderer...', selectedScreen);
+//       getStream(selectedScreen);
+//     });
+
+//     socket.on('offer', (offerSDP) => {
+//       console.log('Received offer');
+//       rtcPeerConnection.current
+//         ?.setRemoteDescription(new RTCSessionDescription(offerSDP))
+//         .then(() => {
+//           rtcPeerConnection.current
+//             ?.createAnswer()
+//             .then((sdp) => {
+//               rtcPeerConnection.current?.setLocalDescription(sdp);
+
+//               console.log('Sending answer');
+//               socket.emit('answer', sdp);
+//             });
+//         });
+//     });
+
+//     socket.on('answer', (answerSDP) => {
+//       console.log('Received answer');
+//       rtcPeerConnection.current?.setRemoteDescription(
+//         new RTCSessionDescription(answerSDP)
+//       );
+//     });
+
+//     socket.on('icecandidate', (icecandidate) => {
+//       rtcPeerConnection.current?.addIceCandidate(
+//         new RTCIceCandidate(icecandidate)
+//       );
+//     });
+
+//     rtcPeerConnection.current?.addEventListener('icecandidate', (e) => {
+//       if (e.candidate) {
+//         socket.emit('icecandidate', e.candidate);
+//         console.log('Sent icecandidate');
+//       }
+//     });
+
+//     rtcPeerConnection.current?.addEventListener('iceconnectionstatechange', (e) => {
+//       console.log('ICE connection state change:', e);
+//     });
+
+//     rtcPeerConnection.current?.addEventListener('track', (e) => {
+//       if (videoRef.current) {
+//         videoRef.current.srcObject = e.streams[0];
+//         videoRef.current.onloadedmetadata = () => videoRef.current?.play();
+//       }
+
+//       console.log('Received track:', e.streams[0]);
+//     });
+//   }, []);
+
+// console.log("asd")
+//   return (
+//     <div className="App">
+//           video not availabless    video not availabless
+//       <div
+//         style={{
+//           display: 'block',
+//           backgroundColor: 'black',
+//           margin: 0,
+//         }}
+//       >
+ 
+//         <video ref={videoRef} className="video">
+//           video not availabless
+//         </video>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Screen;
