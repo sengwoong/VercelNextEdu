@@ -4,12 +4,15 @@ import React, { useState,useRef,useEffect,useContext} from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import { useSelector } from 'react-redux';
 import { PageSelector } from '@/components/pdf/PageSelector';
+import SocketMemo from '../memo/SocketMemo';
 
 
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-const PdfView = () => {
+type Props={
+  page:number
+}
+const PdfView = ({page}:Props) => {
   const url = '/somefile.pdf';
 
   const [pageScale] = useState(1);
@@ -23,20 +26,21 @@ const PdfView = () => {
   const PdfSizeRef = useRef<HTMLDivElement | null>(null);
   useEffect(() => {
     if (PdfSizeRef.current) {
-      const PageWidth = PdfSizeRef.current.offsetWidth / 2;
+      const PageWidth = PdfSizeRef.current.offsetWidth / page;
      // console.log('width:', PageWidth);
       // 페이지의 폭을 반으로 나눈 값을 state로 설정합니다.
       setPageWidth(PageWidth);
+    console.log(PageWidth)
     }
   }, [PdfSizeRef]);
   
-
+  console.log(PageWidth)
 
   useEffect(() => {
     function handleResize() {
       if (PdfSizeRef.current) {
         if (window.innerWidth > 790) {
-          const pageWidth = PdfSizeRef.current.offsetWidth / 2;
+          const pageWidth = PdfSizeRef.current.offsetWidth / page;
          // console.log('width:', pageWidth);
           setPageWidth(pageWidth);
         } else {
@@ -63,12 +67,12 @@ const PdfView = () => {
 <>
 
 
-
+<SocketMemo  Page={page} PdfWidth={PageWidth}  ></SocketMemo>
 
 
 {/*여기까지다시치기 */}
 
-    <div className="max-w-5xl jus pt-5 h-90vh overflow-scroll bg-slate-50" ref={PdfSizeRef}>
+    <div className="  pt-5 h-90vh overflow-scroll bg-slate-50" ref={PdfSizeRef}>
       <Document
         file={url}
         options={{
@@ -100,8 +104,8 @@ const PdfView = () => {
           />
 
 
-
-       
+{
+  page===2&&(
 <Page
   className="w-full"
   width={PageWidth}
@@ -127,7 +131,10 @@ const PdfView = () => {
       element.style.display = 'none';
     });
   }}
-/>
+/>)}
+
+
+
         </div>
       </Document>
     </div>

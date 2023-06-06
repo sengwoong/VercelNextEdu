@@ -48,10 +48,6 @@ export async function POST(req: Request, res: NextApiResponse<Data | ErrorData>)
 
 
 
-
-
-
-
 // type Data = {
 //   message: Message;
 // }

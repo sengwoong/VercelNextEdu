@@ -27,6 +27,14 @@ export async function getFollowingPostsOf(username: string) {
     .then(mapPosts);
 }
 
+
+
+
+
+
+
+
+
 export async function getPost(id: string) {
   return client
     .fetch(
@@ -102,6 +110,21 @@ export async function dislikePost(postId: string, userId: string) {
     .commit();
 }
 
+// async function updateLiveStatusForUser(userId, status) {
+//   const query = `*[_type == "user" && _id == $userId]`;
+//   const params = { userId };
+
+//   const transaction = client.transaction();
+
+//   transaction
+//     .patch(query)
+//     .set({ live: status });
+
+//   await transaction.commit();
+// }
+
+
+
 export async function addComment(
   postId: string,
   userId: string,
@@ -170,7 +193,6 @@ export async function createUser(Username: string, Name: string, Email:string, I
         Name: { _type: 'reference', _ref: Name },
         Email: { _type: 'reference', _ref: Email },
         Image: { _type: 'image', asset: { _type: 'reference', _ref: result.document } },
-        live: false,
         Following: { _type: 'array', _ref: [], },
         Followers: { _type: 'array', _ref: [], },
         Bookmarks: { _type: 'array', _ref: [], },
@@ -183,3 +205,32 @@ export async function createUser(Username: string, Name: string, Email:string, I
 
 
 
+
+
+
+export async function createLecturUser(Username: string, Name: string, Email:string, Image: Blob) {
+  const formData = new FormData();
+  formData.append('file', Image);
+
+  return fetch(`${assetsURL}`, {
+    method: 'user',
+    headers: {
+      authorization: `Bearer ${process.env.SANITY_SECRET_TOKEN}`,
+    },
+    body: Image,
+  })
+    .then((res) => res.json())
+    .then((result) => {
+      return client.create({
+        _type: 'User',
+        Username: { _type: 'reference', _ref: Username },
+        Name: { _type: 'reference', _ref: Name },
+        Email: { _type: 'reference', _ref: Email },
+        Image: { _type: 'image', asset: { _type: 'reference', _ref: result.document } },
+        live: false,
+        Following: { _type: 'array', _ref: [], },
+        Followers: { _type: 'array', _ref: [], },
+        Bookmarks: { _type: 'array', _ref: [], },
+      }, { autoGenerateArrayKeys: true });
+    });
+}

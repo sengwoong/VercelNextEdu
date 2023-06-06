@@ -7,11 +7,7 @@ export default {
       title: 'Username',
       name: 'username',
       type: 'string',
-    },
-    {
-      title: 'live',
-      name: 'live',
-      type: 'boolean',
+      validation: (Rule) => Rule.required().unique()
     },
     {
       title: 'Name',
@@ -21,6 +17,22 @@ export default {
     {
       title: 'Email',
       name: 'email',
+      type: 'string',
+    },
+ 
+    {
+      title: 'Password',
+      name: 'password',
+      type: 'string',
+    },
+    {
+      title: 'Live',
+      name: 'live',
+      type: 'boolean',
+    },
+    {
+      title: 'Lecture',
+      name: 'lecture',
       type: 'string',
     },
     {
@@ -35,7 +47,7 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{type: 'user'}],
+          to: [{ type: 'user' }]
         },
       ],
       validation: (Rule) => Rule.unique(),
@@ -47,7 +59,7 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{type: 'user'}],
+          to: [{ type: 'user' }]
         },
       ],
       validation: (Rule) => Rule.unique(),
@@ -59,7 +71,7 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{type: 'post'}],
+          to: [{ type: 'post' }],
         },
       ],
       validation: (Rule) => Rule.unique(),
@@ -71,4 +83,4 @@ export default {
       subtitle: 'username',
     },
   },
-}
+};

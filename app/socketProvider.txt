@@ -1,0 +1,28 @@
+"use client";
+import React, { createContext, useMemo, useContext, ReactNode } from "react";
+import { io, Socket } from "socket.io-client";
+
+interface SocketContextType {
+  socket: Socket | null;
+}
+
+const SocketContext = createContext<SocketContextType>({ socket: null });
+
+export const useSocket = (): Socket | null => {
+  const { socket } = useContext(SocketContext);
+  return socket;
+};
+
+interface SocketProviderProps {
+  children: ReactNode;
+}
+
+export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
+  const socket = useMemo(() => io("localhost:8000"), []);
+
+  return (
+    <SocketContext.Provider value={{ socket }}>
+      {children}
+    </SocketContext.Provider>
+  );
+};

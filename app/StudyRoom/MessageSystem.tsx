@@ -4,7 +4,7 @@ import ChatInput from '@/components/ChatInput/ChatInput'
 import MessageList from '@/components/ChatList/MessageList'
 import Header from "@/components/ChatHeader/Header";
 
-import PdfView from '@/components/pdf/pdfviewByDouble';
+import PdfView from '@/components/pdf/pdfView';
 import { useUnderScrollerInChat } from '@/components/ChatList/useUnderScrollerInChat';
 import ResizableMemo from "@/components/Minimenu/Memo/ResizableMemo";
 import { usePathname } from "next/navigation";
@@ -29,12 +29,13 @@ function MessageSystem() {
 <div className="flex"> 
 
 <useUnderScrollerInChat.Provider value={{ counter, setCounter }}>
-<div className="bg-white  w-full h-screen ">
+<div className="bg-white  w-96 h-screen ">
 
 <Header  />
 <MessageList  user={user}/>
 <ChatInput user={user}/>
 </div>
+
 </useUnderScrollerInChat.Provider>
 
 

@@ -5,6 +5,7 @@ import { NextResponse, NextRequest } from 'next/server';
 
 export async function GET() {
   return withSessionUser(async (user) =>
+
     getFollowingPostsOf(user.username) //
       .then((data) => NextResponse.json(data))
   );

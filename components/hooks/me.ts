@@ -17,6 +17,14 @@ async function updateFollow(targetId: string, follow: boolean) {
   }).then((res) => res.json());
 }
 
+async function updateLive(usserId: string, live: boolean) {
+  return fetch('/api/live', {
+    method: 'PUT',
+    body: JSON.stringify({ id: usserId, live }),
+  }).then((res) => res.json());
+}
+
+
 export default function useMe() {
   const { data: user, isLoading, error, mutate } = useSWR<HomeUser>('/api/me');
 
@@ -47,5 +55,27 @@ export default function useMe() {
     },
     [mutate]
   );
-  return { user, isLoading, error, setBookmark, toggleFollow };
+
+  const toggleLive = useCallback(
+    (usserId: string, live: boolean) => {
+      return mutate(updateLive(usserId, live), { populateCache: false });
+    },
+    [mutate]
+  );
+
+
+  return { user, isLoading, error, setBookmark, toggleFollow ,  toggleLive};
 }
+
+
+
+
+
+
+// async function addComment(id: string, comment: string) {
+//   return fetch('/api/comments', {
+//     method: 'POST',
+//     body: JSON.stringify({ id, comment }),
+//   }).then((res) => res.json());
+// }
+

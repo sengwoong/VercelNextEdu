@@ -1,6 +1,7 @@
 import PostDetail from '@/components/HomPage/PostCard/Postmodal/PostDetail';
 import PostModal from '@/components/HomPage/PostCard/Postmodal/PostModal';
 import ModalPortal from '@/components/ui/ModalPortal';
+
 import { SimplePost } from '@/model/post';
 import { signIn, useSession } from 'next-auth/react';
 import Image from 'next/image';

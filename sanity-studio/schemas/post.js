@@ -7,7 +7,8 @@ export default {
       title: 'Author',
       name: 'author',
       type: 'reference',
-      to: [{type: 'user'}],
+      to: [{type: 'user'}, ]
+
     },
   
 
@@ -23,7 +24,8 @@ export default {
       of: [
         {
           type: 'reference',
-          to: [{type: 'user'}],
+          to: [{type: 'user'}]
+
         },
       ],
       validation: (Rule) => Rule.unique(),
@@ -42,7 +44,8 @@ export default {
               title: 'Author',
               name: 'author',
               type: 'reference',
-              to: [{type: 'user'}],
+              to: [{type: 'user'}]
+
             },
             {
               title: 'Comment',

@@ -1,10 +1,11 @@
-import { addUser, getUserByUsername, getUserByUsernameLoing } from '@/service/user';
+import { addUser, getUserByUsername, getUserByUsernameLoing, getUserEmail } from '@/service/user';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 import { signIn } from 'next-auth/react';
 import { userInfo } from 'os';
 import Credentials from 'next-auth/providers/credentials';
-
+import CredentialsProvider from "next-auth/providers/credentials";
+let userContent:any = null;
 export const authOptions:NextAuthOptions = {
   // Configure one or more authentication providers
   providers: [
@@ -15,37 +16,47 @@ export const authOptions:NextAuthOptions = {
 
     
 
-    // Credentials({
-   
-     
-    //   credentials: {
-   
-    //     email: {
-    //       label: 'Email',
-    //       type: 'text',
-    //     },
-      
-    //     name: {
-    //     label: 'text',
-    //     type: 'text',
-    //     placeholder: "비밀번호를 입력하세요.",
-    //   },
-    //   },
-    //   async authorize(credentials) {
-    //     if (!credentials?.email  || !credentials?.name) {
-    //       throw new Error('Email and password required');
-    //     }
-
-    //     const exUser = await getUserByUsernameLoing(credentials.email);
-
-    //     return exUser;
-    //   }
-    // })
   
-
-
-
-
+    CredentialsProvider({
+      // 여기서 입력한 이름을 "signIn(이름)" 형태로 사용
+      type: "credentials",
+      // 여기서 작성한 타입 그대로 아래 "authorize()"의 "credentials"의 타입 적용
+      // 또한 "next-auth"에서 생성해주는 로그인창에서 사용 ( http://localhost:3000/api/auth/signin )
+      credentials: {
+        id: {
+          label: "고유번호",
+          type: "text",
+          placeholder: "없으면 ",
+        },
+        email: {
+          label: "이메일",
+          type: "email",
+          placeholder: "email 입력하세요.",
+        },
+        lecture: {
+          label: "선생님",
+          type: "text",
+          placeholder: "선생님 인지 확인하세요.",
+        },
+        password: {
+          label: "비밀번호",
+          type: "password",
+          placeholder: "password을 입력하세요.",
+        },
+      },
+    
+      // 로그인 유효성 검사
+      // 로그인 요청인 "signIn("credentials", { id, password })"에서 넣어준 "id", "password"값이 그대로 들어옴
+      async authorize(credentials, req) {
+        if (!credentials) {
+          throw new Error("잘못된 입력값으로 인한 오류가 발생했습니다.");
+        } else {
+          // console.log(credentials)
+          return credentials;
+     
+        }
+      },
+    }),
 
 
 
@@ -63,37 +74,72 @@ export const authOptions:NextAuthOptions = {
     signIn: '/auth/signin',
   },
   callbacks: {
-    async signIn({ user: { id, name, image, email } }) {
+    async signIn({ user: { id, name, image, email },account,profile ,credentials}) {
       if (!email) {
         return false;
       }
-      addUser({
-        
-        id,
-        name: name || '',
-        image,
-        email,
-        username: email.split('@')[0],
-       
-      });
+if(account?.type == "credentials"){
+//   console.log("credentials")
+// console.log
+
+// console.log("credentials")
+if (credentials && credentials.email && credentials.password) {
+  userContent =   await getUserEmail(credentials.email as string, credentials.password as string);
+}
+      
+// console.log("callbackuserContent")
+// console.log(userContent)
+// console.log("callbackuserContent")
+
+}
+
+  
       return true;
     },
     async session({ session,token}) {
       const user = session?.user;
-      if (user) {
+      // console.log("userContent" )
+      // console.log(userContent )
+      // console.log("userContent" )
+      if(userContent !== null){
         session.user = {
           ...user,
+
           username: user.email?.split('@')[0] || '',
-         id:token.id as string,
+         id:userContent?.[0]._id,
+         name:userContent?.[0].name,
+         image:userContent?.[0].image,
         };
       }
+      else{
+
+        if (user) {
+          session.user = {
+            ...user,
+  
+            username: user.email?.split('@')[0] || '',
+            id:token.id as string,
+          };
+      }
+     
+      }
+      // console.log("session")
+      // console.log(session)
       return session;
     },
     async jwt({ token, user }) {
+
       if (user) {
         token.id = user.id;
         token.username = user.email?.split('@')[0] || '';
+      
       }
+
+      if(userContent !== null){
+        token.lecture =  userContent[0].lecture;
+        token.live = userContent[0].live
+      }
+//  console.log(token)
       return token;
     },
   
@@ -102,3 +148,15 @@ export const authOptions:NextAuthOptions = {
   
 };
 export default NextAuth(authOptions);
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,8 @@ import MessageSystem from '../MessageSystem';
 import CreatePdf from '@/app/StudyRoom/CreatePdf';
 import { useSession } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
-
+import SocketMemo from "@/components/memo/SocketMemo"
+import ModalPortal from '@/components/ui/ModalPortal';
 
 
 function HomePage() {
@@ -33,14 +34,15 @@ function HomePage() {
 
   return (
     <main>
-      <div className='fixed z-40'>
+
   
-        </div>
-      <div className={`flex bg-slate-50 ${flexClass}`}>
-    
+  
+      <div className={`flex  bg-slate-50 ${flexClass}`}>
+       
         <CreatePdf />
         <MessageSystem />
-      </div>
+        </div>
+     
     </main>
   );
 }

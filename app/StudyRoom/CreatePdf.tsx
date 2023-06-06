@@ -1,16 +1,16 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import PdfViewDouble from '@/components/pdf/pdfviewByDouble';
-import PdfMenuDouble from '@/components/pdf/pdfMenuByDouble'
-import PdfViewFirst from '@/components/pdf/pdfviewByFirst';
-import PdfMenuFirst from '@/components/pdf/pdfMenuByFirst'
+import PdfView from '@/components/pdf/pdfView';
+
+import PdfMenu from '@/components/pdf/pdfMenu'
 import { PageSelector } from '@/components/pdf/PageSelector';
+import SocketMemo from '@/components/memo/SocketMemo';
 
 function CreatePdf() {
 
 
 
-  const [value, setValue] = useState(false);
+  const [value, setValue] = useState(true);
 
 console.log(value+"value")
 
@@ -42,15 +42,16 @@ useEffect(() => {
     
     <PageSelector.Provider value={{ value, setValue }}>
       <div className='w-full'>
+  
         {value ? (
           <>
-            <PdfMenuDouble />
-            <PdfViewDouble />
+           <PdfMenu getPage={2}/>
+            <PdfView page={2} />
           </>
         ) : (
           <>
-            <PdfMenuFirst />
-            <PdfViewFirst />
+            <PdfMenu getPage={1}/>
+            <PdfView page={1}/>
           </>
         )}
       </div>

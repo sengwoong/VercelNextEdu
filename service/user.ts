@@ -7,16 +7,22 @@ type OAuthUser = {
   name: string;
   username: string;
   image?: string | null;
+  password:string;
+  lecture:string
+  live:boolean
 
 };
 
-export async function addUser({ id, username, email, name, image }: OAuthUser) {
+
+export async function addUser({ id, username, email, name, image ,password,lecture}: OAuthUser) {
   return client.createIfNotExists({
     _id: id,
     _type: 'user',
     username,
     email,
-  
+    lecture,
+    live:false,
+    password,
     name,
     image,
     following: [],
@@ -24,6 +30,8 @@ export async function addUser({ id, username, email, name, image }: OAuthUser) {
     bookmarks: [],
   });
 }
+
+
 
 export async function getUserByUsername(username: string) {
   return client.fetch(
@@ -36,6 +44,50 @@ export async function getUserByUsername(username: string) {
     }`
   );
 }
+
+export async function getAllUserEmail(email: string) {
+  return client.fetch(
+    `*[
+      (_type == "user" && email == "${email}" ) 
+    ]
+    {
+
+      ...
+    }
+    
+      `
+  );
+}
+
+
+
+
+export async function getUserEmail(Email: string,password:string) {
+  return client.fetch(
+    `*[
+      (_type == "user" && email == "${Email}" && password == "${password}") 
+    ]
+    {
+
+      ...
+    }
+    
+      `
+  );
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //    Username/Name/Email/Image 을 받아와야함
 export async function getUserByUsernameLoing(email: string) {
@@ -93,7 +145,8 @@ export async function getUserForProfile(username: string) {
              "id":_id,
              "following": count(following),
              "followers": count(followers),
-             "posts": count(*[_type=="post" && author->username == "${username}"])
+             "posts": count(*[_type=="post" && author->username == "${username}"]),
+             
            }
       
       
@@ -169,3 +222,14 @@ export async function unfollow(myId: string, targetId: string) {
     .patch(targetId, (user) => user.unset([`followers[_ref=="${myId}"]`]))
     .commit({ autoGenerateArrayKeys: true });
 }
+
+
+export async function setLiveStatus(userId:string,isLive: boolean) {
+  return client
+    .patch(userId)
+    .set({ live: isLive })
+    .commit();
+}
+
+
+

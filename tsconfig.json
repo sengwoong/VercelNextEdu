@@ -35,14 +35,11 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
+    "app/api/**/*.ts", // 수정된 부분입니다.
     "**/index.tsx"
-, "app/api/addMessage"  ],
+, "app/home/A/pag2e.tst", "app/home/A/scrrem.tsㅌ", "app/home/A/pag2e.tst", "app/rtcPearProvider.ts", "app/socketProvider.tsx", "app/home/A/scrrem.tst"  ],
   "exclude": [
-    "node_modules","sanity-studio"
-  ],
-
-  
-  
-  
-
+    "node_modules",
+    "sanity-studio"
+  ]
 }

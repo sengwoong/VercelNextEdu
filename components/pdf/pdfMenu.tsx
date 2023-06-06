@@ -7,8 +7,10 @@ import {AppDispatch,RootState} from '@/store/store'
 import { pdfActions } from '@/slices/pdfSlice';
 import { PageSelector } from '@/components/pdf/PageSelector';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-
-function PdfMenu() {
+type Props={
+   getPage: number 
+}
+function PdfMenu( { getPage }:Props) {
   const { upNumPages:disposeupNumPages, downNumPages:disposedownNumPages, setPageNumber:disposesetPageNumber,downPageScale:disposedownPageScale,upPageScale:disposeupPageScale} = pdfActions;
   const { pageNumber:ReduxpageNumber,  pageScale:ReduxpageScale} = useSelector((state:RootState)=>{return state.pdf})
   const dispatch =useDispatch<AppDispatch>()
@@ -46,8 +48,8 @@ function PdfMenu() {
 
 
   return (
-    <div className='flex flex-col justify-center bg-slate-50  w-full'>
-    <div>
+    <div className='flex flex-col justify-center bg-slate-50  w-full z-50'>
+    <div className='z-50'>
     
         <div className="flex flex-1  py-3">
       
@@ -100,7 +102,7 @@ function PdfMenu() {
                 className="ml-2 bg-blue-500 text-white py-1 px-3 rounded-md text-sm"
                 onClick={()=>{
                     
-                  pageMax-1 < pageNumber ?  pageNumber :dispatch(  disposeupNumPages(1))}}>
+                  pageMax-1 < pageNumber ?  pageNumber :dispatch(  disposeupNumPages(getPage))}}>
               
 
 
@@ -111,7 +113,7 @@ function PdfMenu() {
               <button
                 className="ml-2 bg-blue-500 text-white py-1 px-3 rounded-md text-sm"
                 onClick={() => {
-                  pageNumber-1 < 2 ? pageNumber  : dispatch( disposedownNumPages(1));
+                  pageNumber-1 < 2 ? pageNumber  : dispatch( disposedownNumPages(getPage));
                 }}
               >
                 

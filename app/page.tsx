@@ -17,8 +17,8 @@ export default async function HomePage() {
 
   
   const exUser = await getUserByUsernameLoing("rje287573@gmail.com");
-  console.log(exUser);
-  console.log("exUser");
+  // console.log(exUser);
+  // console.log("exUser");
   return (
     <div>
            <Navbar></Navbar>

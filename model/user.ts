@@ -4,7 +4,12 @@ export type AuthUser = {
   username: string;
   email: string;
   image?: string;
+  _id:string;
+  lecture:string;
 };
+
+
+
 
 export type LoadPdf={
   url:string;
@@ -20,6 +25,7 @@ export type HomeUser = AuthUser & {
   following: SimpleUser[];
   followers: SimpleUser[];
   bookmarks: string[];
+  live:boolean;
 };
 
 export type SearchUser = AuthUser & {
@@ -29,4 +35,5 @@ export type SearchUser = AuthUser & {
 
 export type ProfileUser = SearchUser & {
   posts: number;
+  live:boolean;
 };

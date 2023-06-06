@@ -8,7 +8,6 @@ import { Metadata } from "next";
 
 
 
-
 export default function RootLayout({
   children,
 }: {
@@ -21,10 +20,13 @@ export default function RootLayout({
       <body>
         <AuthContext>
         <ReduxProvider>
+
+    
 <SWRConfigContext>
 {children}
 </SWRConfigContext>
-       
+
+  
         </ReduxProvider>
         </AuthContext>
   <div id='portal'></div>

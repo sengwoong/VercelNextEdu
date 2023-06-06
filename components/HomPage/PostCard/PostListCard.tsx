@@ -40,6 +40,7 @@ export default function PostListCard({ post, priority = false }: Props) {
         <p>
           <span className='font-bold mr-1'>{username}</span>
           {text}
+        
         </p>
         {comments > 1 && (
           <button
