@@ -8,6 +8,16 @@
 사용가술<BR>
 ![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/b801789a-3628-474a-ae51-9d3ddea13a9d)
 
+ 
+ 스크린샷올라기<BR>
+ 힘들었던점올리기<BR>
+ 
+ 
+ ### 여기부터 읽기가 힘든 부분입니다.
+ <BR>
+ <BR>
+ <BR>
+ 
 사양설명<BR>
 https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
 
