@@ -15,7 +15,11 @@ type Props = {
 export default function FollowButton({ user }: Props) {
   const { username } = user;
   const { user: loggedInUser,toggleFollow} = useMe();
-
+  console.log("user")
+console.log("user")
+console.log(user.id)
+console.log("user")
+console.log("user")
 //useRouter
   const router = useRouter();
   const [isPending, startTransition] = useTransition();

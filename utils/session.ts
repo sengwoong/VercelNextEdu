@@ -7,7 +7,9 @@ export async function withSessionUser(
 ): Promise<Response> {
   const session = await getServerSession(authOptions);
   const user = session?.user;
-
+  console.log(session)
+  console.log("utilsSessionsUser")
+  console.log(user)
   if (!user) {
     return new Response('Authentication Error', { status: 401 });
   }

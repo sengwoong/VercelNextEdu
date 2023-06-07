@@ -89,6 +89,7 @@ export async function getUserEmail(Email: string,password:string) {
 
 
 
+
 //    Username/Name/Email/Image 을 받아와야함
 export async function getUserByUsernameLoing(email: string) {
   return client.fetch(
@@ -136,7 +137,7 @@ export async function searchUsers(keyword?: string) {
 
 
 export async function getUserForProfile(username: string) {
-  console.log(username+"머임")
+  // console.log(username+"머임")
   return client
     .fetch(
       ` 
@@ -199,10 +200,16 @@ export async function removeBookmark(userId: string, postId: string) {
     .commit();
 }
 
+
+
 export async function follow(myId: string, targetId: string) {
+  console.log("myId,targetId")
+  console.log("myId,targetId")
+  console.log(myId,targetId)
   return client
     .transaction() //
     .patch(myId, (user) =>
+
       user
         .setIfMissing({ following: [] })
         .append('following', [{ _ref: targetId, _type: 'reference' }])
@@ -222,6 +229,7 @@ export async function unfollow(myId: string, targetId: string) {
     .patch(targetId, (user) => user.unset([`followers[_ref=="${myId}"]`]))
     .commit({ autoGenerateArrayKeys: true });
 }
+
 
 
 export async function setLiveStatus(userId:string,isLive: boolean) {

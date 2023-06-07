@@ -101,28 +101,21 @@ if (credentials && credentials.email && credentials.password) {
       // console.log("userContent" )
       // console.log(userContent )
       // console.log("userContent" )
-      if(userContent !== null){
+      console.log("sessiontoken")
+      console.log(token)
+      console.log("sessiontoken")
         session.user = {
           ...user,
 
           username: user.email?.split('@')[0] || '',
-         id:userContent?.[0]._id,
-         name:userContent?.[0].name,
-         image:userContent?.[0].image,
+         id:token._idx as string,
+         name:token.name as string,
+         image:token.image as string,
         };
-      }
-      else{
-
-        if (user) {
-          session.user = {
-            ...user,
-  
-            username: user.email?.split('@')[0] || '',
-            id:token.id as string,
-          };
-      }
+      
+      
      
-      }
+      
       // console.log("session")
       // console.log(session)
       return session;
@@ -138,8 +131,14 @@ if (credentials && credentials.email && credentials.password) {
       if(userContent !== null){
         token.lecture =  userContent[0].lecture;
         token.live = userContent[0].live
+        token._idx =userContent?.[0]._id,
+        token.name =userContent?.[0].name,
+        token.image =userContent?.[0].image
       }
-//  console.log(token)
+      console.log("tokentoken")
+      console.log("tokentoken")
+ console.log(token)
+ console.log("tokentoken")
       return token;
     },
   
@@ -148,15 +147,6 @@ if (credentials && credentials.email && credentials.password) {
   
 };
 export default NextAuth(authOptions);
-
-
-
-
-
-
-
-
-
 
 
 
