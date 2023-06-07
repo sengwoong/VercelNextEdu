@@ -125,7 +125,7 @@ type Props = {
 
 export default function UserProfile({ user }: Props) {
   const { image, username, name, followers, following, posts, lecture, live, id } = user;
-  const { user: liveData, toggleLive } = useMe();
+  const { user:userData, toggleLive } = useMe();
   const [isLive, setIsLive] = useState(live);
 
   const handleClick = () => {
@@ -175,8 +175,10 @@ export default function UserProfile({ user }: Props) {
         </div>
 
         <div>
-          
-        <LiveButton isLive={isLive} handleClick={handleClick} />
+        {username === (userData?.username ?? '') && (
+  <LiveButton isLive={isLive} handleClick={handleClick} />
+)}
+       
 
         </div>
       </div>

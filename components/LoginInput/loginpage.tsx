@@ -36,18 +36,21 @@ const Auth = ({ provpassworders, callbackUrl }: Props) => {
   }, []);
 
   const login = useCallback(async () => {
-    // console.log(username,email,lecture)
-    // console.log(callbackUrl)
-    // console.log("_____loging____")
+    console.log(username,email,lecture)
+    console.log(callbackUrl)
+    console.log("_____loging____")
     try {
+  
+        console.log(email,password,lecture)
       await signIn('credentials', {
        
         email,
         password,
         lecture,
         redirect: true,
-        
-        callbackUrl:"/home"
+   
+        callbackUrl:"/home",
+   
       });
      
     } catch (error) {
@@ -67,10 +70,14 @@ const Auth = ({ provpassworders, callbackUrl }: Props) => {
         email,
         email.split('@')[0] || '',
         lecture
+      ).then(()=>{
+        login();
+      }
+  
       )
    
         
-      // login();
+     
     } catch (error) {
       console.log(error);
     }

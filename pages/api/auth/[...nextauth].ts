@@ -1,4 +1,4 @@
-import { addUser, getUserByUsername, getUserByUsernameLoing, getUserEmail } from '@/service/user';
+import { addUser, getUserByUsername, getUserByUsernameLoing, getUserEmail, getUserEmailOAuth } from '@/service/user';
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 import { signIn } from 'next-auth/react';
@@ -78,6 +78,10 @@ export const authOptions:NextAuthOptions = {
       if (!email) {
         return false;
       }
+      if(account?.type == "oauth"){
+        userContent =   await getUserEmailOAuth(email);
+      }
+      console.log(account?.type)
 if(account?.type == "credentials"){
 //   console.log("credentials")
 // console.log
@@ -87,9 +91,12 @@ if (credentials && credentials.email && credentials.password) {
   userContent =   await getUserEmail(credentials.email as string, credentials.password as string);
 }
       
-// console.log("callbackuserContent")
-// console.log(userContent)
-// console.log("callbackuserContent")
+if(userContent==null==undefined){
+  return false;
+}
+console.log("callbackuserContent")
+console.log(userContent)
+console.log("callbackuserContent")
 
 }
 
@@ -101,9 +108,9 @@ if (credentials && credentials.email && credentials.password) {
       // console.log("userContent" )
       // console.log(userContent )
       // console.log("userContent" )
-      console.log("sessiontoken")
-      console.log(token)
-      console.log("sessiontoken")
+      // console.log("sessiontoken")
+      // console.log(token)
+      // console.log("sessiontoken")
         session.user = {
           ...user,
 
@@ -135,10 +142,10 @@ if (credentials && credentials.email && credentials.password) {
         token.name =userContent?.[0].name,
         token.image =userContent?.[0].image
       }
-      console.log("tokentoken")
-      console.log("tokentoken")
- console.log(token)
- console.log("tokentoken")
+//       console.log("tokentoken")
+//       console.log("tokentoken")
+//  console.log(token)
+//  console.log("tokentoken")
       return token;
     },
   

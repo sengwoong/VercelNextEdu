@@ -12,9 +12,12 @@
     if (!email) {
           return false;
         }
-        console.log(await getAllUserEmail(email))
-        if (!await getAllUserEmail(email)) {
-          
+      
+     
+        const userEmail = await getAllUserEmail(email);
+        console.log(userEmail)
+        if (userEmail.length !== 0 ) {
+          console.log("거절")
           return false;
         }
         console.log("연결3")
@@ -24,8 +27,8 @@
   console.log("접속성공")
       
             
-  console.log("선생")
-  addUser({
+  console.log("생성")
+  await addUser({
             id,
             name: name || '',
             image: 'http://t1.daumcdn.net/friends/prod/editor/dc8b3d02-a15a-4afa-a88b-989cf2a50476.jpg',

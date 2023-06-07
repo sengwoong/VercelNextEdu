@@ -77,7 +77,19 @@ export async function getUserEmail(Email: string,password:string) {
 }
 
 
+export async function getUserEmailOAuth(Email: string) {
+  return client.fetch(
+    `*[
+      (_type == "user" && email == "${Email}" ) 
+    ]
+    {
 
+      ...
+    }
+    
+      `
+  );
+}
 
 
 
