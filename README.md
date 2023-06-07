@@ -63,8 +63,9 @@ https://velog.io/@naahgi/%EC%BB%A4%EC%8A%A4%ED%85%80%ED%9B%85%EA%B3%BC-%EC%84%B1
 
 캐쉬 와 swr분리<BR>
 
-upstrash<BR>
-
+upstrash next13 실행이아닌 vercel버전으로하기<BR>
+https://velog.io/@naahgi/upstrash
+  
 redis문법<BR>
 https://velog.io/@naahgi/redix-%EC%82%AC%EC%9A%A9%EB%B2%95
 
