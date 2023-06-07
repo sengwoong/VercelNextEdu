@@ -11,7 +11,7 @@
  
  스크린샷올라기<BR>
  힘들었던점올리기<BR>
- 
+ 읽기힘든 부분은 기존에있는 블로그(저작권 문제로 안보이게해둠) 을 다시 정리하여 올린것입니다.
  
  ### 여기부터 읽기가 힘든 부분입니다.
  <BR>
@@ -66,10 +66,12 @@ https://velog.io/@naahgi/%EC%BB%A4%EC%8A%A4%ED%85%80%ED%9B%85%EA%B3%BC-%EC%84%B1
 upstrash<BR>
 
 redis문법<BR>
-
+https://velog.io/@naahgi/redix-%EC%82%AC%EC%9A%A9%EB%B2%95
 
 rduxtools<BR>
-
+https://velog.io/@naahgi/reduxtools-%EC%82%AC%EC%9A%A9%EB%B2%95-redux-%ED%95%98%EA%B3%A0-%EB%B4%90%EC%95%BC-%EC%9D%B4%ED%95%B4%EB%90%8D%EB%8B%88%EB%8B%A4.%EA%B2%80%EC%83%89%ED%95%B4%EB%8F%84-13%EB%B2%84%EC%A0%84%EC%9D%B4%ED%9B%84%EB%8A%94-%EC%98%81%EB%AC%B8%EB%A7%90%EA%B3%A0%EC%95%88%EB%B3%B4%EC%9E%84-%ED%95%9C%EA%B5%AD%EC%B5%9C%EC%B4%88%EC%9E%84
+  
+  
 socket.io<BR>
 
 낙서하기<BR>
