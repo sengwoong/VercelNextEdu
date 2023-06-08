@@ -19,7 +19,8 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj
 
  <img width="696" alt="스크린샷 2023-06-08 오후 4 36 35" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d3e7559f-46aa-46b9-af81-c70904cd934b">
 
- 
+ <img width="1434" alt="스크린샷 2023-06-08 오후 4 37 54" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/49067c58-207a-4e4b-8c1b-42e7be8a228d">
+
  
  
  힘들었던점올리기<BR>
