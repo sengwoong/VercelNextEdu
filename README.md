@@ -51,7 +51,7 @@ https://velog.io/@naahgi/%EB%B9%A0%EB%A5%B8%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A1%9C%
 https://velog.io/@naahgi/%EB%94%94%EB%B0%94%EC%9A%B4%EC%8A%A4-%EB%B0%8F-%EC%8A%AC%EB%9F%AC%EA%B7%B8%EC%82%AC%EC%9A%A9%EB%B2%95
 
 세션토큰 받는법 1<BR>
-https://velog.io/@naahgi/6c2gqk9t
+https://velog.io/@naahgi/6c2gqk9t<BR>
 세션 토큰 받기 2<BR>
   https://velog.io/@naahgi/%EC%84%9C%EB%B2%84-%EC%84%B8%EC%85%98%EC%9D%84-%EC%9D%B4%EC%81%98%EA%B2%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
 
