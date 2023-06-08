@@ -21,7 +21,7 @@ function Header() {
         </Link>
      
 
-      <ResizableMemo/>
+      {/* <ResizableMemo/> */}
   
  
     

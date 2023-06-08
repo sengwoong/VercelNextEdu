@@ -3,8 +3,8 @@ import https from "https";
 import { Redis } from '@upstash/redis';
 
 const redis=new Redis({
-  url:'process.env.UPSTASH_REDIS_REST_TOKEN!',
-  token:'process.env.UPSTASH_REDIS_REST_TOKEN!',
+  url:'https://apn1-fancy-dog-33363.upstash.io',
+  token:'AYJTASQgMjg1NDIyMWItNmU2Zi00NDZmLTk3MzItMmJiNDk5NzVjZjg4N2FkYWUzODA4ZjE5NDRiMWI1NjBhYmY2MzI3ZTRmNmI=',
   agent:new https.Agent({ keepAlive: true })
 });
 // console.log("--------------------");

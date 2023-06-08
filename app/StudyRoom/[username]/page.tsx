@@ -6,6 +6,7 @@ import { useSession } from 'next-auth/react';
 import { usePathname } from 'next/navigation';
 import SocketMemo from "@/components/memo/SocketMemo"
 import ModalPortal from '@/components/ui/ModalPortal';
+import ResizableMemo from '@/components/Minimenu/Memo/ResizableMemo';
 
 
 function HomePage() {
@@ -38,7 +39,7 @@ function HomePage() {
   
   
       <div className={`flex  bg-slate-50 ${flexClass}`}>
-       
+ 
         <CreatePdf />
         <MessageSystem />
         </div>
