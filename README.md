@@ -1,281 +1,121 @@
 
 
-![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/30484d4f-3154-49fc-b863-3a65fe488f86)
+녹화본 
+https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj
 
+
+
+기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
+
+
+사용가술<BR>
+![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/b801789a-3628-474a-ae51-9d3ddea13a9d)
+
+ 
+ 스크린샷올라기<BR>
+ <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432">
+<img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b">
+<img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352">
+
+ <img width="696" alt="스크린샷 2023-06-08 오후 4 36 35" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d3e7559f-46aa-46b9-af81-c70904cd934b">
+
+ 
+ 
+ 
+ 힘들었던점올리기<BR>
+ 읽기힘든 부분은 기존에있는 블로그(저작권 문제로 안보이게해둠) 을 다시 정리하여 올린것입니다.
+ 
+ ### 여기부터 읽기가 힘든 부분입니다.
+ <BR>
+ <BR>
+ <BR>
+ 
+사양설명<BR>
 https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
 
-ㄴ 개념정리
+구글가입<BR>
+https://velog.io/@naahgi/%EA%B5%AC%EA%B8%80-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EC%BD%9C%EB%B0%B1URL-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%84%B8%EC%85%98%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%B0%8F-JWT%ED%86%A0%ED%81%B0
+로그인 및 회원가입<BR>
+만들기
 
- <H1 ID="코드">코드 </H1>
-   
-   
- <H2 ="레이아웃">레이아웃</H2>
-    
- 레이아웃은 중복됀 컨텐츠를 다시랜더링 하지않기위해 사용한다. 홈에서만 사용하는 네비바를 app디렉토리안에 홈에넣어서 호스트이름/home 의 안에있는 네비바를 재사용 하였다.<br>
- ![image](https://user-images.githubusercontent.com/92924243/236949617-0646d124-55a7-497e-a78b-876562262235.png)<br>
- <H3 href="#아이콘" >사용한것</H3><br>
-  <H4> 아이콘</H4><br>
-    
-    
- <H2 ID="아이콘">아이콘</H2><br>
-   
-리엑트 아이콘을 하드코딩하는게아니라 재활용할수 있게 ui 컴포넌트 파일로 지정하였습니다.<br>
- ![image](https://user-images.githubusercontent.com/92924243/236950054-77d86847-d115-44c5-a6e2-2fe2c2af602e.png)
-   
-    <H2 ID="AUTH">NEXT.AUTH</H2><br>
-   
-   ![image](https://user-images.githubusercontent.com/92924243/236951443-6b14d700-c7be-48ba-a1d3-dd53039c4ad1.png)
-   
-   13버전 지원 아직안하고있어서 12버전으로 사용하였습니다.<br>
-   구글로로그인을 만든것은 다음과같습니다.
-   <br>
-   
-   
-```
+swr 공용 fetch<BR>
+https://velog.io/@naahgi/SWR-fetch%EC%93%B0%EA%B8%B0%EA%B7%80%EC%B0%AE%EC%9D%84%EB%96%84
 
-   import { addUser, getUserByUsername, getUserByUsernameLoing } from '@/service/user';
-import NextAuth, { NextAuthOptions } from 'next-auth';
-import GoogleProvider from 'next-auth/providers/google';
-import { signIn } from 'next-auth/react';
-import { userInfo } from 'os';
-import Credentials from 'next-auth/providers/credentials';
-export const authOptions:NextAuthOptions = {
-  // Configure one or more authentication providers
-  providers: [
-    GoogleProvider({
-      clientId: process.env.GOOGLE_OAUTH_ID || '',
-      clientSecret: process.env.GOOGLE_OAUTH_SECRET || '',
-    }),
+라이브러리 멀티카라솔<BR>
+https://velog.io/@naahgi/%EC%B9%B4%EB%9D%BC%EC%86%94
+
+이미지 2개미리 로딩 그리고 sanaty 이미지최적화<BR>
+https://velog.io/@naahgi/SWR%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-%EA%B8%B0%EB%B3%B8%EB%B0%8F-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0
+
+next.js 이미지cdn 등록 및 리다이렉트(이링크에들어오면 여기로보내기)<BR>
+https://velog.io/@naahgi/CDN-%EB%B0%8F-%EB%A6%AC%EB%8B%A4%EC%9D%B4%EB%A0%89%ED%8A%B8-%EB%B0%8F
+
+이쁘게 스타일링 코딩하기 <BR>
+https://velog.io/@naahgi/%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81%EC%9E%98%ED%95%98%EA%B8%B0
+
+라이브러리가 너무빨리 로딩돼면 다이나믹임포터<BR>
+https://velog.io/@naahgi/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%EC%9E%84%ED%8F%B4%ED%84%B0-%EB%A0%88%EC%9D%B4%EC%A7%80%EB%A1%9C%EB%93%9C
+
+모달패턴 과 모달한것을 드래그내려서 배경초기화 안돼게 하기<BR>
+https://velog.io/@naahgi/%EB%B9%A0%EB%A5%B8%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A1%9C%EB%94%A9-%EB%AA%A8%EB%8B%AC-%EB%AA%A8%EB%8B%AC%EC%B0%BD%EA%B3%A0%EC%A0%95%EC%8B%9C%ED%82%A4%EA%B8%B0
+
+디바운스및 슬러그<BR>
+https://velog.io/@naahgi/%EB%94%94%EB%B0%94%EC%9A%B4%EC%8A%A4-%EB%B0%8F-%EC%8A%AC%EB%9F%AC%EA%B7%B8%EC%82%AC%EC%9A%A9%EB%B2%95
+
+세션토큰 받는법 1<BR>
+https://velog.io/@naahgi/6c2gqk9t<BR>
+세션 토큰 받기 2<BR>
+  https://velog.io/@naahgi/%EC%84%9C%EB%B2%84-%EC%84%B8%EC%85%98%EC%9D%84-%EC%9D%B4%EC%81%98%EA%B2%8C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
 
 
-  ],
-    // ...add more providers here
-  pages:{
-    signIn: '/auth/signin',
-  },
-  callbacks: {
-    async signIn({ user: { id, name, image, email } }) {
-      if (!email) {
-        return false;
-      }
-      addUser({
-        id,
-        name: name || '',
-        image,
-        email,
-        username: email.split('@')[0],
-      });
-      return true;
-    },
-    async session({ session,token}) {
-      const user = session?.user;
-      if (user) {
-        session.user = {
-          ...user,
-          username: user.email?.split('@')[0] || '',
-         id:token.id as string,
-        };
-      }
-      return session;
-    },
-    async jwt({ token, user }) {
-      if (user) {
-        token.id = user.id;
-        token.username = user.email?.split('@')[0] || '';
-      }
-      return token;
-    },
+usecontent 와 swr<BR>
+https://velog.io/@naahgi
+
+mutate<BR>
+https://velog.io/@naahgi/%EC%BB%A4%EC%8A%A4%ED%85%80%ED%9B%85%EA%B3%BC-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94
+
+캐쉬 와 swr분리<BR>
+
+upstrash next13 실행이아닌 vercel버전으로하기<BR>
+https://velog.io/@naahgi/upstrash
   
-  }
+redis문법<BR>
+https://velog.io/@naahgi/redix-%EC%82%AC%EC%9A%A9%EB%B2%95
+
+rduxtools<BR>
+https://velog.io/@naahgi/reduxtools-%EC%82%AC%EC%9A%A9%EB%B2%95-redux-%ED%95%98%EA%B3%A0-%EB%B4%90%EC%95%BC-%EC%9D%B4%ED%95%B4%EB%90%8D%EB%8B%88%EB%8B%A4.%EA%B2%80%EC%83%89%ED%95%B4%EB%8F%84-13%EB%B2%84%EC%A0%84%EC%9D%B4%ED%9B%84%EB%8A%94-%EC%98%81%EB%AC%B8%EB%A7%90%EA%B3%A0%EC%95%88%EB%B3%B4%EC%9E%84-%ED%95%9C%EA%B5%AD%EC%B5%9C%EC%B4%88%EC%9E%84
+  
+  
+socket.io<BR>
+
+낙서하기<BR>
+https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
+
+노드 내화면들고오기<BR>
+https://velog.io/@naahgi/%ED%99%94%EB%A9%B4-%EB%AF%B8%EB%9F%AC%EB%A7%81%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
+
+케쉬<BR>
+
+인터렉티브<BR>
+https://velog.io/@naahgi/%EB%A9%94%EC%84%B8%EC%A7%80-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C<BR>
+
+  드래깅 <BR>
+https://velog.io/@naahgi/%EB%93%9C%EB%9E%98%EA%B9%85%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%A6%AC%EC%97%91%ED%8A%B8%EB%A7%8C%EB%93%A4%EA%B8%B0<BR>
 
   
-};
-export default NextAuth(authOptions);
+추가참고 남에벨로그<BR>
+  https://velog.io/@nearworld/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C%EC%99%80-%EC%8A%A4%EB%83%85%EC%83%B7<BR>
+
+미들웨어<BR>
 
 
+webrtc(예정)<BR>
+테스트(예정)<BR>
+강의쇼핑(예정)<BR>
+애니메이션 fermer(예정)<BR>
+fastapi로 캐글과같이 유저벌 추천만들기(예정)<BR>
+ FASTAPI 도커<BR>
+  FAST API 카프카 <BR>
+ NEXT.JS TDD()<BR>
 
-```
-
-   
-   <br>
-  <H4>코드설명은 다음과 같습니다.(어려운부분만)</H4>
-   <br>
-   
-   
-```
-
-    username: user.email?.split('@')[0] || '',
-    
-```
-
-   username이 없어서 새로운배열로 추가하여서 세션에넣어두었습니다.
-   <br>
-   ![image](https://user-images.githubusercontent.com/92924243/236952584-f726086b-edc9-405a-8b8a-81087ffe414f.png)
-<br>
-   위처럼 세션과 JWT로생성한 AUTH를 컨텐트로만들어서 가장상위레이아웃에 우산을 씨워주어 모두사용할수있게만듭니다.
-   <br>
-   ![image](https://user-images.githubusercontent.com/92924243/236952732-99cdce77-eb12-4563-91c8-7cbfa3e6bbb6.png)
-<br>
-   위처럼 우산을 씨워주면 어디든지 NEXT.AUTH가 생성한것을 유즈컨텐츠 처럼 불러올수있습니다.
-   <br>
-   
-   <H3>사용방법</H3>
-   
-   ```
-   
-   'use client';
-
-import Link from 'next/link';
-
-import { usePathname } from 'next/navigation';
-
-import { useSession, signIn, signOut } from 'next-auth/react';
-
-import HomeIcon from '../ui/icons/HomeIcon';
-import HomeFillIcon from '../ui/icons/HomeFillIcon';
-import SearchIcon from '../ui/icons/SearchIcon';
-import SearchFillIcon from '../ui/icons/SearchFillIcon';
-import NewIcon from '../ui/icons/NewIcon';
-import NewFillIcon from '../ui/icons/NewFillIcon';
-import ColorButton from '../ui/ColorButton';
-import Avatar from './Avatar';
-
-const menu = [
-  {
-    href: '/',
-    icon: <HomeIcon />,
-    clickedIcon: <HomeFillIcon />,
-    title: 'Home',
-  },
-  {
-    href: '/search',
-    icon: <SearchIcon />,
-    clickedIcon: <SearchFillIcon />,
-    title: 'Search users',
-  },
-  {
-    href: '/new',
-    icon: <NewIcon />,
-    clickedIcon: <NewFillIcon />,
-    title: 'New post',
-  },
-];
-export default function AuthNavbar() {
-  const pathName = usePathname();
-  const { data: session } = useSession();
-  const user = session?.user;
-
-  return (
-    <div className='flex w-full justify-content items-center px-6'>
-      <Link href='/home' aria-label='Home'>
-        <h1 className='text-3xl font-bold'>Gang-E</h1>
-      </Link>
-      {/* //nav 는 오른쪽 정렬 */}
-      <nav className='ml-auto left-0'>
-        <ul className='flex gap-4 items-center p-4'>
-          {menu.map(({ href, icon, clickedIcon, title }) => (
-            <li key={href}>
-              <Link href={`/home/${href}`} aria-label={title}>
-            
-                {pathName === href ? clickedIcon : icon}
-              </Link>
-            </li>
-          ))}
-          {user && (
-            <li>
-              <Link href={`home/user/${user.username}`}>
-                <Avatar image={user.image} size='small' highlight />
-              </Link>
-            </li>
-          )}
-          <li>
-            {session ? (
-              <ColorButton text='Sign out' onClick={() => signOut()} />
-            ) : (
-              <ColorButton text='Sign in' onClick={() => signIn()} />
-            )}
-          </li>
-        </ul>
-      </nav>
-    </div>
-  );
-}
-
-   ```
-   
-   
-    위와같이   signOut() signIn() 을 호출해서 사용합니다<BR>
-    또한   const { data: session } = useSession(); 을 사용하면 CSR 일떄  세션을 사용 가능합니다.
-    
-
-   ```
-   
-import Signin from '@/components/LoginInput/Sigin';
-import Auth from '@/components/LoginInput/loginpage';
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
-import { Metadata } from 'next';
-import { getServerSession } from 'next-auth';
-import { getProviders } from 'next-auth/react';
-import { redirect } from 'next/navigation';
-
-export const metadata: Metadata = {
-  title: 'Signin',
-  description: 'Signup or Login to Instantgram',
-};
-
-type Props = {
-  searchParams: {
-    callbackUrl: string;
-  };
-};
-
-export default async function SignPage({
-  searchParams: { callbackUrl },
-}: Props) {
-  const session = await getServerSession(authOptions);
-
-  if (session) {
-    redirect('/home');
-  }
-
-  const providers = await getProviders();
-  // providers가 null이거나 undefined인 경우 빈 배열로 초기화합니다.
-  const providersArr = providers ? Object.values(providers) : [];
-
-  return (
-    <section>
-      <Auth providers={providersArr} callbackUrl={callbackUrl ?? '/home'} />
-      
-    </section>
-  );
-}
-
-   ```
-   
-   <H4 >위와같이 콜백 URL을searchParams 을로 받아와서 다시반환함 </H4>
-   
-  <H3>추가로볼것</H3><br>
-   <H4 ID="JWT" >jwt,session </H4><H4 ID= "ENV">ENV</H4>
-   <br>
-   <H3>팁</H3><br>
-   구글대쉬보드에 등록해야합니다.<br>
-   
-https://console.cloud.google.com/welcome?hl=ko&_ga=2.88227035.1153804196.1683585301-1443038629.1680135679&project=coral-sanctuary-384817
-
-
-
-
-
-
-<H2 ID="ENV"> ENV</H2>
-![image](https://user-images.githubusercontent.com/92924243/236954477-4779bf52-1c04-4a00-bf60-6f8518c61288.png)
-
-위와같이 민감한 키값을 사용할떄습니다..<br>
-process.env.UPSTASH_REDIS_REST_URL!<br>
-이런형식으로 사용하며.<br>
-
-아래와같이 VERCEL 일경우 다음과같이사용합니다<BR>
-![image](https://user-images.githubusercontent.com/92924243/236954688-57fabf45-2c42-4899-819f-1f27b5209a4e.png)
-   
-   
 
