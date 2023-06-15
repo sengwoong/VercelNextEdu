@@ -1,30 +1,30 @@
 
 
-녹화본 (1버전)
-https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj
-
-녹화본 (2버전)
-https://www.youtube.com/watch?v=e4P8eGXeBlM&ab_channel=dhdjdj
-
+녹화본 (1버전)<br>
+https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
+<br><br>
+녹화본 (2버전)<br>
+https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj <br>
+<br><br>
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
+<br><br><br>
 
 
 
-
-사용가술<BR>
+사용가술<BR><br>
 ![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/b801789a-3628-474a-ae51-9d3ddea13a9d)
 
- 
+ <br><br><br>
  스크린샷올라기<BR>
- <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432">
-<img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b">
-<img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352">
+ <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432"><br>
+<img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
+<img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
 
  <img width="696" alt="스크린샷 2023-06-08 오후 4 36 35" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d3e7559f-46aa-46b9-af81-c70904cd934b">
+<br>
+ <img width="1434" alt="스크린샷 2023-06-08 오후 4 37 54" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/49067c58-207a-4e4b-8c1b-42e7be8a228d"><br>
 
- <img width="1434" alt="스크린샷 2023-06-08 오후 4 37 54" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/49067c58-207a-4e4b-8c1b-42e7be8a228d">
-
- 
+ <br><br>
  
  힘들었던점올리기<BR>
  읽기힘든 부분은 기존에있는 블로그(저작권 문제로 안보이게해둠) 을 다시 정리하여 올린것입니다.
