@@ -23,7 +23,8 @@ https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj <br>
  <img width="696" alt="스크린샷 2023-06-08 오후 4 36 35" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d3e7559f-46aa-46b9-af81-c70904cd934b">
 <br>
  <img width="1434" alt="스크린샷 2023-06-08 오후 4 37 54" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/49067c58-207a-4e4b-8c1b-42e7be8a228d"><br>
-<img width="1440" alt="스크린샷 2023-06-15 오후 3 57 24" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ff01461e-53b4-4088-8932-25f932bdf8cf"><br>
+<img width="1440" alt="스크린샷 2023-06-15 오후 3 57 24" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ff01461e-53b4-4088-8932-25f932bdf8cf"><br><img width="1431" alt="스크린샷 2023-06-15 오후 4 51 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/636b4734-e15c-4ce7-843a-11b19c7c6950">
+
 
  <br><br>
  
