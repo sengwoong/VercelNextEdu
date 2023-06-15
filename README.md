@@ -6,6 +6,9 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 녹화본 (2버전)<br>
 [https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj ](https://www.youtube.com/watch?v=9Wb6RjsFYRE&feature=youtu.be&ab_channel=dhdjdj)<br>
 
+영상 보기
+
+
 처음보시는분들은 버전2만 보시면됍니다
 
 <br><br>
@@ -25,7 +28,10 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 
 <img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
 <img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe">
- <img src="https://example.com/images/mygif.gif" alt="My GIF">
+
+ 모션그래픽
+ <img src="https://gifmaker.me/video-to-gif/viewimage/20230614-21-prNUunnTXSM7Khx9-nMtjgx-hnet">
+
  
 
 
