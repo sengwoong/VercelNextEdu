@@ -1,11 +1,21 @@
 
 
-녹화본 
+녹화본 (1버전)
 https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj
+
+
+녹화본 (2버전)
+https://github.com/sengwoong/VercelNextEdu/assets/92924243/1a5c8fc8-fca4-4955-a2c7-db50e6a21360
+
+(인터렉티브웹추가 [그리기도구 화면에서 어떤위로든 움직이게하기])
+https://github.com/sengwoong/VercelNextEdu/assets/92924243/9d84e8bd-38ac-4444-8817-8d3d218d955f
+
 
 
 
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
+
+
 
 
 사용가술<BR>
