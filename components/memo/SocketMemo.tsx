@@ -5,6 +5,8 @@ import { drawLine } from '@/utils/drawLine';
 import { ChromePicker, ColorResult } from 'react-color';
 import ModalPortal from '../ui/ModalPortal';
 import ResizableDraw from '../Minimenu/Memo/ResizableDraw';
+import { Point } from 'framer-motion';
+import { Draw } from '@/types/typing';
 
 const socket = io('http://localhost:3001');
 
