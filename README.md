@@ -4,7 +4,9 @@
 https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 <br><br>
 녹화본 (2버전)<br>
-https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj <br>
+[https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj ](https://www.youtube.com/watch?v=9Wb6RjsFYRE&feature=youtu.be&ab_channel=dhdjdj)<br>
+
+
 <br><br>
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
 <br><br><br>
