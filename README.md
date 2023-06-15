@@ -145,7 +145,8 @@ https://velog.io/@naahgi/%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4
 
   fermer 모션
   https://velog.io/@naahgi/fermer-%EB%AA%A8%EC%85%98%EA%B7%B8%EB%9E%98%ED%94%BD
-  
+  검색프론트엔드기술 useTransition 
+  https://velog.io/@ktthee/React-18-%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-useDeferredValue-%EB%A5%BC-%EC%8D%A8-%EB%B3%B4%EC%9E%90#usetransition
   
   
   
