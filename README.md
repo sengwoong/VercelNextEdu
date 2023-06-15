@@ -25,10 +25,11 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 
 <img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
 <img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe">
-<br><img width="1440" alt="스크린샷 2023-06-15 오후 5 03 57" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/c56d4efc-bd87-4350-ad8d-0c4ee68118d0"><br>
+![GIF 예시](https://i.imgur.com/example.gif)
+
  
 
-https://j.gifs.com/jYwq4y.gif
+
  
  <br><br>
  
