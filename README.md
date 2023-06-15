@@ -3,15 +3,8 @@
 녹화본 (1버전)
 https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj
 
-
 녹화본 (2버전)
-https://github.com/sengwoong/VercelNextEdu/assets/92924243/1a5c8fc8-fca4-4955-a2c7-db50e6a21360
-
-(인터렉티브웹추가 [그리기도구 화면에서 어떤위로든 움직이게하기])
-https://github.com/sengwoong/VercelNextEdu/assets/92924243/9d84e8bd-38ac-4444-8817-8d3d218d955f
-
-
-
+https://www.youtube.com/watch?v=e4P8eGXeBlM&ab_channel=dhdjdj
 
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
 
@@ -47,7 +40,9 @@ https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
 구글가입<BR>
 https://velog.io/@naahgi/%EA%B5%AC%EA%B8%80-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EC%BD%9C%EB%B0%B1URL-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%84%B8%EC%85%98%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%B0%8F-JWT%ED%86%A0%ED%81%B0
 로그인 및 회원가입<BR>
-만들기
+  https://velog.io/@naahgi/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EC%A7%81-oauth%EB%A7%90%EA%B3%A0
+  
+
 
 swr 공용 fetch<BR>
 https://velog.io/@naahgi/SWR-fetch%EC%93%B0%EA%B8%B0%EA%B7%80%EC%B0%AE%EC%9D%84%EB%96%84
@@ -85,7 +80,7 @@ https://velog.io/@naahgi
 mutate<BR>
 https://velog.io/@naahgi/%EC%BB%A4%EC%8A%A4%ED%85%80%ED%9B%85%EA%B3%BC-%EC%84%B1%EB%8A%A5%EC%B5%9C%EC%A0%81%ED%99%94
 
-캐쉬 와 swr분리<BR>
+
 
 upstrash next13 실행이아닌 vercel버전으로하기<BR>
 https://velog.io/@naahgi/upstrash
@@ -98,7 +93,7 @@ https://velog.io/@naahgi/reduxtools-%EC%82%AC%EC%9A%A9%EB%B2%95-redux-%ED%95%98%
   
   
 socket.io<BR>
-
+https://velog.io/write?id=c3187337-c039-43e4-b3f2-ec6c2043bd48
 낙서하기<BR>
 https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
 
@@ -106,7 +101,8 @@ https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
 https://velog.io/@naahgi/%ED%99%94%EB%A9%B4-%EB%AF%B8%EB%9F%AC%EB%A7%81%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
 
 케쉬<BR>
-
+https://velog.io/@naahgi/%EB%A6%AC%EC%97%91%ED%8A%B8-cache
+  
 인터렉티브<BR>
 https://velog.io/@naahgi/%EB%A9%94%EC%84%B8%EC%A7%80-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C<BR>
 
@@ -118,8 +114,15 @@ https://velog.io/@naahgi/%EB%93%9C%EB%9E%98%EA%B9%85%EA%B0%80%EB%8A%A5%ED%95%9C-
   https://velog.io/@nearworld/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C%EC%99%80-%EC%8A%A4%EB%83%85%EC%83%B7<BR>
 
 미들웨어<BR>
+https://velog.io/@naahgi/%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4
 
-
+  
+  
+  
+  
+  
+  
+  
 webrtc(예정)<BR>
 테스트(예정)<BR>
 강의쇼핑(예정)<BR>
