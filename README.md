@@ -27,8 +27,9 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 <img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe">
 <br><img width="1440" alt="스크린샷 2023-06-15 오후 5 03 57" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/c56d4efc-bd87-4350-ad8d-0c4ee68118d0"><br>
  
-[<iframe src='//gifs.com/embed/jYwq4y' frameborder='0' scrolling='no' width='1214px' height='758px' style='-webkit-backface-visibility: hidden;-webkit-transform: scale(1);' ></iframe>
-](https://j.gifs.com/jYwq4y.gif)
+
+https://j.gifs.com/jYwq4y.gif
+ 
  <br><br>
  
 <h2> 내가 생각하는 중요한 코딩이란</h2>
