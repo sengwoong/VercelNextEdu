@@ -20,11 +20,9 @@ https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj <br>
 <img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
 <img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
 
- <img width="696" alt="스크린샷 2023-06-08 오후 4 36 35" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d3e7559f-46aa-46b9-af81-c70904cd934b">
+<img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
+<img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe">
 <br>
- <img width="1434" alt="스크린샷 2023-06-08 오후 4 37 54" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/49067c58-207a-4e4b-8c1b-42e7be8a228d"><br>
-<img width="1440" alt="스크린샷 2023-06-15 오후 3 57 24" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ff01461e-53b4-4088-8932-25f932bdf8cf"><br><img width="1431" alt="스크린샷 2023-06-15 오후 4 51 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/636b4734-e15c-4ce7-843a-11b19c7c6950">
-
 
  <br><br>
  
