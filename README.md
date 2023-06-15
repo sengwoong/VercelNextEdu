@@ -24,7 +24,7 @@ https://github.com/sengwoong/VercelEdueScoketServer
 ![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/b801789a-3628-474a-ae51-9d3ddea13a9d)
 
  <br><br><br>
- 스크린샷올라기<BR>
+ 스크린샷<BR>
  <img width="1257" alt="스크린샷 2023-06-15 오후 6 05 12" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/dafc9726-4dcc-40bc-af02-9c4a62fa4452"><BR>
 
  <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432"><br>
