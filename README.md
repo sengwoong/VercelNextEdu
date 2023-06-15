@@ -30,11 +30,12 @@ https://github.com/sengwoong/VercelEdueScoketServer
  <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432"><br>
 <img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
 <img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
-
-<img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
-<img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe"><br>
 <img width="1433" alt="스크린샷 2023-06-15 오후 6 30 32" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ed7ad1dc-7155-4f38-a286-c799d889ef08">
 <br>
+ 
+<img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
+<img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe"><br>
+
  모션그래픽
  
  ![GIFMaker_me](https://github.com/sengwoong/VercelNextEdu/assets/92924243/5bdf151d-aa83-40d8-ae06-c66c25824dec)
