@@ -30,9 +30,9 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 <img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe">
 
  모션그래픽
- <img src="https://gifmaker.me/video-to-gif/viewimage/20230614-21-prNUunnTXSM7Khx9-nMtjgx-hnet">
-
  
+ ![GIFMaker_me](https://github.com/sengwoong/VercelNextEdu/assets/92924243/5bdf151d-aa83-40d8-ae06-c66c25824dec)
+
 
 
  
