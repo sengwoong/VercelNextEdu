@@ -12,6 +12,9 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 처음보시는분들은 버전2만 보시면됍니다
 
 <br><br>
+소켓서버깃<br>
+https://github.com/sengwoong/VercelEdueScoketServer
+<br><br>
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
 <br><br><br>
 
