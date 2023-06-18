@@ -92,12 +92,12 @@ https://velog.io/@ktthee/React-18-%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-useDefer
 
 <img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
 
+
+
+<img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe"><br>
 낙서하기<br>
 https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
 <br>
-
-<img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe"><br>
-
 
  <br> <br>
 
@@ -192,7 +192,7 @@ https://velog.io/@naahgi/reduxtools-%EC%82%AC%EC%9A%A9%EB%B2%95-redux-%ED%95%98%
   
   
 socket.io<BR>
-https://velog.io/write?id=c3187337-c039-43e4-b3f2-ec6c2043bd48<BR>
+[https://velog.io/write?id=c3187337-c039-43e4-b3f2-ec6c2043bd48<BR>](https://velog.io/@naahgi/%EC%86%8C%EC%BC%93-1%EB%8C%801%ED%99%94%EB%A9%B4%EA%B3%B5%EC%9C%A0)
   토글버튼만들기<BR>
   https://velog.io/@naahgi/%ED%86%A0%EA%B8%80%EB%B2%84%ED%8A%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0<BR>
 [낙서하기<BR>
