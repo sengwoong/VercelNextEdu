@@ -22,28 +22,26 @@ https://github.com/sengwoong/VercelEdueScoketServer
 
 ## 사용가술<BR><br>
 ![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/b801789a-3628-474a-ae51-9d3ddea13a9d)
+ 사양설명<br>
+https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
+
 
  <br><br><br>
  ## 스크린샷<BR>
  <img width="1257" alt="스크린샷 2023-06-15 오후 6 05 12" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/dafc9726-4dcc-40bc-af02-9c4a62fa4452"><BR>
  
- 사양설명<br>
-https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
-
-<br><br><br>
-
-
- <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432"><br>
-
-
  구글가입<br>
 https://velog.io/@naahgi/%EA%B5%AC%EA%B8%80-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EC%BD%9C%EB%B0%B1URL-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%84%B8%EC%85%98%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%B0%8F-JWT%ED%86%A0%ED%81%B0 <br>
 로그인 및 회원가입<br>
 https://velog.io/@naahgi/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EC%A7%81-oauth%EB%A7%90%EA%B3%A0<br><br><br>
 
+ <BR><BR><BR>
 
 
-<img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
+
+ <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432"><br>
+
+
 케쉬<br>
 https://velog.io/@naahgi/%EB%A6%AC%EC%97%91%ED%8A%B8-cache<br>
 swr 공용 fetch<br>
@@ -68,16 +66,14 @@ https://velog.io/@naahgi/%EB%B9%A0%EB%A5%B8%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A1%9C%
 <br><br>
 
 
-<img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
+<img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
 
 드래깅<br>
 https://velog.io/@naahgi/%EB%93%9C%EB%9E%98%EA%B9%85%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%A6%AC%EC%97%91%ED%8A%B8%EB%A7%8C%EB%93%A4%EA%B8%B0
 
 <br><br>
 
-
-<img width="1433" alt="스크린샷 2023-06-15 오후 6 30 32" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ed7ad1dc-7155-4f38-a286-c799d889ef08">
-<br>
+<img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
 
  추가참고 남에벨로그<br>
 
@@ -86,6 +82,11 @@ https://velog.io/@nearworld/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C%EC%99
 useTransition <br>
 
 https://velog.io/@ktthee/React-18-%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-useDeferredValue-%EB%A5%BC-%EC%8D%A8-%EB%B3%B4%EC%9E%90#usetransition<br>
+
+<img width="1433" alt="스크린샷 2023-06-15 오후 6 30 32" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ed7ad1dc-7155-4f38-a286-c799d889ef08">
+<br>
+
+
 
 <img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
 
