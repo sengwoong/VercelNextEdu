@@ -44,7 +44,8 @@ https://velog.io/@naahgi/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EC%A7%81-
 
 
 <img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
-
+케쉬<br>
+https://velog.io/@naahgi/%EB%A6%AC%EC%97%91%ED%8A%B8-cache<br>
 swr 공용 fetch<br>
 https://velog.io/@naahgi/SWR-fetch%EC%93%B0%EA%B8%B0%EA%B7%80%EC%B0%AE%EC%9D%84%EB%96%84
 <br><br>
@@ -69,16 +70,44 @@ https://velog.io/@naahgi/%EB%B9%A0%EB%A5%B8%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A1%9C%
 
 <img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
 
+드래깅<br>
+https://velog.io/@naahgi/%EB%93%9C%EB%9E%98%EA%B9%85%EA%B0%80%EB%8A%A5%ED%95%9C-%EB%A6%AC%EC%97%91%ED%8A%B8%EB%A7%8C%EB%93%A4%EA%B8%B0
+
+<br><br>
+
 
 <img width="1433" alt="스크린샷 2023-06-15 오후 6 30 32" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ed7ad1dc-7155-4f38-a286-c799d889ef08">
 <br>
- 
+
+ 추가참고 남에벨로그<br>
+
+https://velog.io/@nearworld/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EC%83%81%ED%83%9C%EC%99%80-%EC%8A%A4%EB%83%85%EC%83%B7<br>
+
+useTransition <br>
+
+https://velog.io/@ktthee/React-18-%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-useDeferredValue-%EB%A5%BC-%EC%8D%A8-%EB%B3%B4%EC%9E%90#usetransition<br>
+
 <img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
+
+낙서하기<br>
+https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
+<br>
+
 <img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe"><br>
 
+
+ <br> <br>
+
+ 
  모션그래픽
  
  ![GIFMaker_me](https://github.com/sengwoong/VercelNextEdu/assets/92924243/5bdf151d-aa83-40d8-ae06-c66c25824dec)
+ <br>
+  fermer 모션<br>
+
+  https://velog.io/@naahgi/fermer-%EB%AA%A8%EC%85%98%EA%B7%B8%EB%9E%98%ED%94%BD
+  <br>
+
 
 
 
@@ -163,9 +192,9 @@ socket.io<BR>
 https://velog.io/write?id=c3187337-c039-43e4-b3f2-ec6c2043bd48<BR>
   토글버튼만들기<BR>
   https://velog.io/@naahgi/%ED%86%A0%EA%B8%80%EB%B2%84%ED%8A%BC-%EB%A7%8C%EB%93%A4%EA%B8%B0<BR>
-낙서하기<BR>
+[낙서하기<BR>
 https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0<BR>
-
+](https://velog.io/@naahgi/%EC%86%8C%EC%BC%93-1%EB%8C%801%ED%99%94%EB%A9%B4%EA%B3%B5%EC%9C%A0)
 노드 내화면들고오기<BR>
 https://velog.io/@naahgi/%ED%99%94%EB%A9%B4-%EB%AF%B8%EB%9F%AC%EB%A7%81%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0
 
@@ -185,9 +214,15 @@ https://velog.io/@naahgi/%EB%93%9C%EB%9E%98%EA%B9%85%EA%B0%80%EB%8A%A5%ED%95%9C-
 미들웨어<BR>
 https://velog.io/@naahgi/%EB%AF%B8%EB%93%A4%EC%9B%A8%EC%96%B4
 
-  fermer 모션
+  fermer 모션<br>
+
   https://velog.io/@naahgi/fermer-%EB%AA%A8%EC%85%98%EA%B7%B8%EB%9E%98%ED%94%BD
-  검색프론트엔드기술 useTransition 
+  <br>
+
+  검색프론트엔드기술 useTransition
+  <br>
+
+
   https://velog.io/@ktthee/React-18-%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-useDeferredValue-%EB%A5%BC-%EC%8D%A8-%EB%B3%B4%EC%9E%90#usetransition
   
   
