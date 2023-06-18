@@ -1,9 +1,9 @@
 
 
-녹화본 (1버전)<br>
+## 녹화본 (1버전)<br>
 https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 <br><br>
-녹화본 (2버전)<br>
+## 녹화본 (2버전)<br>
 [https://www.youtube.com/watch?v=fKabZALkTHY&ab_channel=dhdjdj ](https://www.youtube.com/watch?v=9Wb6RjsFYRE&feature=youtu.be&ab_channel=dhdjdj)<br>
 
 영상 보기
@@ -12,7 +12,7 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 처음보시는분들은 버전2만 보시면됍니다
 
 <br><br>
-소켓서버깃<br>
+## 소켓서버깃<br>
 https://github.com/sengwoong/VercelEdueScoketServer
 <br><br>
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
@@ -20,11 +20,11 @@ https://github.com/sengwoong/VercelEdueScoketServer
 
 
 
-사용가술<BR><br>
+## 사용가술<BR><br>
 ![image](https://github.com/sengwoong/VercelNextEdu/assets/92924243/b801789a-3628-474a-ae51-9d3ddea13a9d)
 
  <br><br><br>
- 스크린샷<BR>
+ ## 스크린샷<BR>
  <img width="1257" alt="스크린샷 2023-06-15 오후 6 05 12" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/dafc9726-4dcc-40bc-af02-9c4a62fa4452"><BR>
  
  사양설명<br>
