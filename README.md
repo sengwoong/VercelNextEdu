@@ -12,11 +12,25 @@ https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 처음보시는분들은 버전2만 보시면됍니다
 
 <br><br>
-## 소켓서버깃<br>
+## 소켓서버 깃(화면공유와 그리기)<br>
 https://github.com/sengwoong/VercelEdueScoketServer
 <br><br>
 기간을 정하기 너무 애매합니다. 대부분 코드는 1주일정도에 적었지만 욕심이나서 계속 추가돼었습니다.
 <br><br><br>
+ #들어가며
+<h2> 내가 생각하는 중요한 코딩이란</h2>
+"나의 로직을 뽑내면서 많은사람들이 저의 로직에 굴복 하여야 한다"는 정도로 잘하지 않는점을 제가더 잘 알고 있는것같습니다.<br>
+vercel 오픈 소스도 힘들게 읽는저로서는, 로직을 땅에서 처음부터 끝까지 치는게아니라<br>
+ 다른사람이 만들어둔 로직에서 추가적인것을 얼마나 잘 할 수 있는지가 더중요하다고 생각하여,<br>
+ (그래도 그렇게 못하진 않습니다. 대기업 10년차 로직을보고 기가죽었을뿐 제가알는 3년차보다 잘합 자신있습니다.)<br>
+ 이러한 형식에 포토폴리오로 기술을 추가공부 하여서 올렸지만,<br>
+ 매우가성비가안좋네요.(3개월 공부하고 1페이지 올라가고) 그래도 쉬운페이지를 많이추가하는것은 바람직하지 않다고 생각하여, 생각한것중 아이거 정말 힘들겠구나<br>
+ 하는것만 추가하고있습니다.
+  <br><br> <br><br>
+ 읽기힘든 부분은 기존에있는 블로그(저작권 문제로 안보이게해둠) 을 다시 정리하여 올린것입니다.
+
+  <br><br> <br><br>
+ 
 
 
 
@@ -91,14 +105,24 @@ https://velog.io/@ktthee/React-18-%EC%97%90-%EC%B6%94%EA%B0%80%EB%90%9C-useDefer
 
 
 <img width="1440" alt="스크린샷 2023-06-15 오후 4 52 52" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/4b0b1f84-755e-4c12-97de-026020a14f62"><br>
-
-
-
+소켓<br>
+https://github.com/sengwoong/VercelNextEdu/blob/main/README.md
+<br><br><br>
 <img width="1437" alt="스크린샷 2023-06-15 오후 4 51 59" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/730ab042-3039-4632-81ee-1efd1ba949fe"><br>
 낙서하기<br>
 https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
 <br>
+인터렉티브
+https://velog.io/@naahgi/%EB%A9%94%EC%84%B8%EC%A7%80-%EC%9D%B8%ED%84%B0%EB%A0%89%ED%8B%B0%EB%B8%8C
 
+upstrash next13 실행이아닌 vercel버전으로하기
+https://velog.io/@naahgi/upstrash
+
+redis문법
+https://velog.io/@naahgi/redix-%EC%82%AC%EC%9A%A9%EB%B2%95
+
+rduxtools
+https://velog.io/@naahgi/reduxtools-%EC%82%AC%EC%9A%A9%EB%B2%95-redux-%ED%95%98%EA%B3%A0-%EB%B4%90%EC%95%BC-%EC%9D%B4%ED%95%B4%EB%90%8D%EB%8B%88%EB%8B%A4.%EA%B2%80%EC%83%89%ED%95%B4%EB%8F%84-13%EB%B2%84%EC%A0%84%EC%9D%B4%ED%9B%84%EB%8A%94-%EC%98%81%EB%AC%B8%EB%A7%90%EA%B3%A0%EC%95%88%EB%B3%B4%EC%9E%84-%ED%95%9C%EA%B5%AD%EC%B5%9C%EC%B4%88%EC%9E%84
  <br> <br>
 
  
@@ -112,22 +136,11 @@ https://velog.io/@naahgi/%EA%B7%B8%EB%A6%BC%EA%B7%B8%EB%A6%AC%EA%B8%B0
   <br>
 
 
-
+###더자세히는아래에
 
  
  <br><br>
- 
-<h2> 내가 생각하는 중요한 코딩이란</h2>
-"나의 로직을 뽑내면서 많은사람들이 저의 로직에 굴복 하여야 한다"는 정도로 잘하지 않는점을 제가더 잘 알고 있는것같습니다.<br>
-vercel 오픈 소스도 힘들게 읽는저로서는, 로직을 땅에서 처음부터 끝까지 치는게아니라<br>
- 다른사람이 만들어둔 로직에서 추가적인것을 얼마나 잘 할 수 있는지가 더중요하다고 생각하여,<br>
- (그래도 그렇게 못하진 않습니다. 대기업 10년차 로직을보고 기가죽었을뿐 제가알는 3년차보다 잘합 자신있습니다.)<br>
- 이러한 형식에 포토폴리오로 기술을 추가공부 하여서 올렸지만,<br>
- 매우가성비가안좋네요.(3개월 공부하고 1페이지 올라가고) 그래도 쉬운페이지를 많이추가하는것은 바람직하지 않다고 생각하여, 생각한것중 아이거 정말 힘들겠구나<br>
- 하는것만 추가하고있습니다.
-  <br><br> <br><br>
- 읽기힘든 부분은 기존에있는 블로그(저작권 문제로 안보이게해둠) 을 다시 정리하여 올린것입니다.
- 
+
  ### 여기부터 읽기가 힘든 부분입니다.
  <BR>
  <BR>
