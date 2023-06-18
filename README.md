@@ -26,10 +26,50 @@ https://github.com/sengwoong/VercelEdueScoketServer
  <br><br><br>
  스크린샷<BR>
  <img width="1257" alt="스크린샷 2023-06-15 오후 6 05 12" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/dafc9726-4dcc-40bc-af02-9c4a62fa4452"><BR>
+ 
+ 사양설명<br>
+https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
+
+<br><br><br>
+
 
  <img width="856" alt="스크린샷 2023-06-08 오후 4 35 02" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/d7d37240-8b7f-4fc3-8a01-2aab1ce34432"><br>
+
+
+ 구글가입<br>
+https://velog.io/@naahgi/%EA%B5%AC%EA%B8%80-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EC%BD%9C%EB%B0%B1URL-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%84%B8%EC%85%98%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%B0%8F-JWT%ED%86%A0%ED%81%B0 <br>
+로그인 및 회원가입<br>
+https://velog.io/@naahgi/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EC%A7%81-oauth%EB%A7%90%EA%B3%A0<br><br><br>
+
+
+
 <img width="1402" alt="스크린샷 2023-06-08 오후 4 35 17" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ea60b200-3ba4-45c6-b014-6199867f2e7b"><br>
+
+swr 공용 fetch<br>
+https://velog.io/@naahgi/SWR-fetch%EC%93%B0%EA%B8%B0%EA%B7%80%EC%B0%AE%EC%9D%84%EB%96%84
+<br><br>
+라이브러리 멀티카라솔<br>
+https://velog.io/@naahgi/%EC%B9%B4%EB%9D%BC%EC%86%94
+<br><br>
+이미지 2개미리 로딩 그리고 sanaty 이미지최적화<br>
+https://velog.io/@naahgi/SWR%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0-%EA%B8%B0%EB%B3%B8%EB%B0%8F-%EC%9D%B4%EB%AF%B8%EC%A7%80%EC%B5%9C%EC%A0%81%ED%99%94-%EB%B6%88%EB%9F%AC%EC%98%A4%EA%B8%B0
+<br><br>
+
+이쁘게 스타일링 코딩하기 <br>
+https://velog.io/@naahgi/%EC%8A%A4%ED%83%80%EC%9D%BC%EB%A7%81%EC%9E%98%ED%95%98%EA%B8%B0<br><br>
+
+라이브러리가 너무빨리 로딩돼면 다이나믹임포터<br>
+https://velog.io/@naahgi/%EB%8B%A4%EC%9D%B4%EB%82%98%EB%AF%B9%EC%9E%84%ED%8F%B4%ED%84%B0-%EB%A0%88%EC%9D%B4%EC%A7%80%EB%A1%9C%EB%93%9C
+<br><br>
+모달패턴 과 모달한것을 드래그내려서 배경초기화 안돼게 하기<br>
+https://velog.io/@naahgi/%EB%B9%A0%EB%A5%B8%EC%9D%B4%EB%AF%B8%EC%A7%80%EB%A1%9C%EB%94%A9-%EB%AA%A8%EB%8B%AC-%EB%AA%A8%EB%8B%AC%EC%B0%BD%EA%B3%A0%EC%A0%95%EC%8B%9C%ED%82%A4%EA%B8%B0
+
+<br><br>
+
+
 <img width="750" alt="스크린샷 2023-06-08 오후 4 35 36" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/73371161-f5b3-47ca-8602-8dbcf8a6b352"><br>
+
+
 <img width="1433" alt="스크린샷 2023-06-15 오후 6 30 32" src="https://github.com/sengwoong/VercelNextEdu/assets/92924243/ed7ad1dc-7155-4f38-a286-c799d889ef08">
 <br>
  
@@ -62,10 +102,10 @@ vercel 오픈 소스도 힘들게 읽는저로서는, 로직을 땅에서 처음
  <BR>
  
 사양설명<BR>
-https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85
+https://velog.io/@naahgi/%EC%82%AC%EC%96%91%EC%84%A4%EB%AA%85<br><br>
 
 구글가입<BR>
-https://velog.io/@naahgi/%EA%B5%AC%EA%B8%80-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EC%BD%9C%EB%B0%B1URL-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%84%B8%EC%85%98%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%B0%8F-JWT%ED%86%A0%ED%81%B0
+https://velog.io/@naahgi/%EA%B5%AC%EA%B8%80-%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85-%EC%BD%9C%EB%B0%B1URL-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%BB%A4%EC%8A%A4%ED%85%80-%EC%84%B8%EC%85%98%EC%BB%A4%EC%8A%A4%ED%85%80-%EB%B0%8F-JWT%ED%86%A0%ED%81%B0<br><br><br>
 로그인 및 회원가입<BR>
   https://velog.io/@naahgi/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85%EB%A1%9C%EC%A7%81-oauth%EB%A7%90%EA%B3%A0
   
