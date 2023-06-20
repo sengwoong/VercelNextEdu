@@ -1,4 +1,4 @@
-
+# vercel 업로드 접속이 많아서 요금부가돼어 내렸습니다(면접자가아닌 공부하는 학생들이 눌러서 내렸습니다 [단체톡에 질문하면서 올렸더니 7일넘게 계속사용])
 
 ## 녹화본 (1버전)<br>
 https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
