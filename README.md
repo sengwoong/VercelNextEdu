@@ -1,7 +1,8 @@
 # vercel 업로드 접속이 많아서 요금부가돼어 내렸습니다(면접자가아닌 공부하는 학생들이 눌러서 내렸습니다 [단체톡에 질문하면서 올렸더니 7일넘게 계속사용])
 ### 노드서버 내림 채팅창내리고 복구했습니다 upsatrash 에서 용량초과라고 메일왔었습니다.(redis)
+#### vercel 링크 못찾는 분을위해 
 https://vercel-next-edu.vercel.app/home
-
+<br><br><br>
 ## 녹화본 (1버전)<br>
 https://www.youtube.com/watch?v=uYAF_LOoNQg&ab_channel=dhdjdj <br>
 <br><br>
