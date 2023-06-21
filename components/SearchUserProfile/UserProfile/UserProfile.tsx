@@ -79,12 +79,11 @@ export default function UserProfile({ user }: Props) {
               학생계정
             </p>
           )}
-        </div>
-
-        <div>
-          {username === (userData?.username ?? "") && (
-            <LiveButton isLive={isLive} handleClick={handleClick} />
-          )}
+          <div>
+            {username === (userData?.username ?? "") && (
+              <LiveButton isLive={isLive} handleClick={handleClick} />
+            )}
+          </div>
         </div>
       </div>
     </section>
