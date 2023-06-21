@@ -1,14 +1,9 @@
 import "../styles/globals.css";
-import {ReduxProvider} from '@/app/ReduxProvider'
-import Auth from '@/components/LoginInput/AuthNavbar';
-import TransitionEffect from "@/components/PageEffect/TransitionEffect";
+import { ReduxProvider } from "@/app/ReduxProvider";
 import AuthContext from "@/context/AuthContext";
 import SWRConfigContext from "@/context/SWRConfigContext";
-import { Metadata } from "next";
 
-
-
-
+//리덕스 auth swr기본설정 portal 을 추가하였습니다.
 export default function RootLayout({
   children,
 }: {
@@ -19,23 +14,14 @@ export default function RootLayout({
       <head />
 
       <body>
-        
-
         <AuthContext>
-        <ReduxProvider>
-
-    
-<SWRConfigContext>
-{children}
-
-</SWRConfigContext>
-
-  
-        </ReduxProvider>
+          <ReduxProvider>
+            <SWRConfigContext>{children}</SWRConfigContext>
+          </ReduxProvider>
         </AuthContext>
-  <div id='portal'></div>
+        <div id="portal"></div>
       </body>
     </html>
   );
-  // 
+  //
 }

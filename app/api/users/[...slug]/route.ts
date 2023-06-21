@@ -7,6 +7,8 @@ type Context = {
     slug: string[];
   };
 };
+
+//해당유저의 포스트 세이브한포스트 좋아요표시한 포스트를 slug 에맞게 가져옵니다.
 export async function GET(_: NextRequest, context: Context) {
   const { slug } = context.params;
 
@@ -15,7 +17,7 @@ export async function GET(_: NextRequest, context: Context) {
   }
 
   const [username, query] = slug;
-console.log(slug+"slug")
+
   let request = getPostsOf;
   if (query === 'saved') {
     request = getSavedPostsOf;

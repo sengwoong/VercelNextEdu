@@ -1,21 +1,16 @@
 import { Message } from "@/types/typing";
 
-
-const fetcherGetMessages = async ()=>{
+const fetcherGetMessages = async () => {
   const protocol = window.location.protocol;
 
-  const res = await fetch(`${protocol}/api/getNewMessage`,
-{
-    method: 'GET'
+  const res = await fetch(`${protocol}/api/getNewMessage`, {
+    method: "GET",
   });
-  
-  
-    const data = await res.json()
-    const messages: Message[] = data.messages;
 
+  const data = await res.json();
+  const messages: Message[] = data.messages;
 
-    return messages
-
-}
+  return messages;
+};
 
 export default fetcherGetMessages;

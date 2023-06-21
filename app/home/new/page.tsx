@@ -1,24 +1,26 @@
+// 글적기 로직입니다.
 
-import NewPost from '@/components/NewPost/NewPost';
-import TransitionEffect from '@/components/PageEffect/TransitionEffect';
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
-import { Metadata } from 'next';
-import { getServerSession } from 'next-auth';
-import { redirect } from 'next/navigation';
+import NewPost from "@/components/NewPost/NewPost";
+import TransitionEffect from "@/components/PageEffect/TransitionEffect";
+import { authOptions } from "@/pages/api/auth/[...nextauth]";
+import { Metadata } from "next";
+import { getServerSession } from "next-auth";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: 'New Post',
-  description: 'Create a new post',
+  title: "New Post",
+  description: "Create a new post",
 };
 
 export default async function NewPostPage() {
   const session = await getServerSession(authOptions);
   if (!session?.user) {
-    redirect('/auth/signin');
+    redirect("/auth/signin");
   }
-  return <>
-
-    <NewPost user={session.user} />;
-    <TransitionEffect/>
+  return (
+    <>
+      <NewPost user={session.user} />;
+      <TransitionEffect />
     </>
+  );
 }

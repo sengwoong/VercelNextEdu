@@ -1,9 +1,27 @@
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
+import { addBookmark, removeBookmark } from "@/service/user";
+import { withSessionUser } from "@/utils/session";
 
-import { addBookmark, removeBookmark } from '@/service/user';
-import { withSessionUser } from '@/utils/session';
-import { getServerSession } from 'next-auth';
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from "next/server";
+
+//북마크가있으면 북마크를 추가하고 북마크가없으면 북마크를뻅니다.
+
+export async function PUT(req: NextRequest) {
+  return withSessionUser(async (user) => {
+    const { id, bookmark } = await req.json();
+
+    if (!id || bookmark == null) {
+      return new Response("Bad Request", { status: 400 });
+    }
+
+    const request = bookmark ? addBookmark : removeBookmark;
+
+    return request(user.id, id) //
+      .then((res) => NextResponse.json(res))
+      .catch((error) => new Response(JSON.stringify(error), { status: 500 }));
+  });
+}
+
+//세션을 따로부를시 위코드와같습니다.
 
 // export async function PUT(req: NextRequest) {
 //   const session = await getServerSession(authOptions);
@@ -25,19 +43,3 @@ import { NextRequest, NextResponse } from 'next/server';
 //     .then((res) => NextResponse.json(res))
 //     .catch((error) => new Response(JSON.stringify(error), { status: 500 }));
 // }
-
-export async function PUT(req: NextRequest) {
-  return withSessionUser(async (user) => {
-    const { id, bookmark } = await req.json();
-
-    if (!id || bookmark == null) {
-      return new Response('Bad Request', { status: 400 });
-    }
-
-    const request = bookmark ? addBookmark : removeBookmark;
-
-    return request(user.id, id) //
-      .then((res) => NextResponse.json(res))
-      .catch((error) => new Response(JSON.stringify(error), { status: 500 }));
-  });
-}

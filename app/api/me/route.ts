@@ -4,19 +4,7 @@ import { withSessionUser } from '@/utils/session';
 import { getServerSession } from 'next-auth';
 import { NextResponse } from 'next/server';
 
-// export async function GET(request: Request) {
-//   const session = await getServerSession(authOptions);
-//   const user = session?.user;
-
-//   if (!user) {
-//     return new Response('Authentication Error', { status: 401 });
-//   }
-
-//   return getUserByUsername(user.username).then((data) =>
-//     NextResponse.json(data)
-//   );
-// }
-
+// 서버 세션을 가져와서 리턴합니다.
 export async function GET() {
   return withSessionUser(async (user) =>
     getUserByUsername(user.username) //

@@ -1,12 +1,11 @@
-
-
-import TransitionEffect from '@/components/PageEffect/TransitionEffect';
-import UserProfile from '@/components/SearchUserProfile/UserProfile/UserProfile';
-import UserPosts from '@/components/SearchUserProfile/profileForUser/UserPost';
-import { getUserForProfile } from '@/service/user';
-import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
-import { cache } from 'react';
+// 유저페이지입니다.
+import TransitionEffect from "@/components/PageEffect/TransitionEffect";
+import UserProfile from "@/components/SearchUserProfile/UserProfile/UserProfile";
+import UserPosts from "@/components/SearchUserProfile/profileForUser/UserPost";
+import { getUserForProfile } from "@/service/user";
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { cache } from "react";
 
 type Props = { params: { username: string } };
 
@@ -14,14 +13,14 @@ const getUser = cache(async (username: string) => getUserForProfile(username));
 
 export default async function UserPage({ params: { username } }: Props) {
   const user = await getUser(username);
-console.log(user)
+  console.log(user);
   if (!user) {
     notFound();
   }
 
   return (
-    <section className='w-full'>
-          <TransitionEffect/>
+    <section className="w-full">
+      <TransitionEffect />
       <UserProfile user={user} />
       <UserPosts user={user} />
     </section>
@@ -36,7 +35,4 @@ export async function generateMetadata({
     title: `${user?.name} (@${user?.username}) · Instantgram Photos`,
     description: `${user?.name}'s all Instantgram posts`,
   };
-
-
-
 }

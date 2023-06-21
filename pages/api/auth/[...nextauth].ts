@@ -1,22 +1,25 @@
-import { addUser, getUserByUsername, getUserByUsernameLoing, getUserEmail, getUserEmailOAuth } from '@/service/user';
-import NextAuth, { NextAuthOptions } from 'next-auth';
-import GoogleProvider from 'next-auth/providers/google';
-import { signIn } from 'next-auth/react';
-import { userInfo } from 'os';
-import Credentials from 'next-auth/providers/credentials';
+import {
+  addUser,
+  getUserByUsername,
+  getUserByUsernameLoing,
+  getUserEmail,
+  getUserEmailOAuth,
+} from "@/service/user";
+import NextAuth, { NextAuthOptions } from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import { signIn } from "next-auth/react";
+import { userInfo } from "os";
+import Credentials from "next-auth/providers/credentials";
 import CredentialsProvider from "next-auth/providers/credentials";
-let userContent:any = null;
-export const authOptions:NextAuthOptions = {
+let userContent: any = null;
+export const authOptions: NextAuthOptions = {
   // Configure one or more authentication providers
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_OAUTH_ID || '',
-      clientSecret: process.env.GOOGLE_OAUTH_SECRET || '',
+      clientId: process.env.GOOGLE_OAUTH_ID || "",
+      clientSecret: process.env.GOOGLE_OAUTH_SECRET || "",
     }),
 
-    
-
-  
     CredentialsProvider({
       // 여기서 입력한 이름을 "signIn(이름)" 형태로 사용
       type: "credentials",
@@ -44,7 +47,7 @@ export const authOptions:NextAuthOptions = {
           placeholder: "password을 입력하세요.",
         },
       },
-    
+
       // 로그인 유효성 검사
       // 로그인 요청인 "signIn("credentials", { id, password })"에서 넣어준 "id", "password"값이 그대로 들어옴
       async authorize(credentials, req) {
@@ -53,115 +56,91 @@ export const authOptions:NextAuthOptions = {
         } else {
           // console.log(credentials)
           return credentials;
-     
         }
       },
     }),
-
-
-
-
-
-
-
   ],
-    // ...add more providers here
+  // ...add more providers here
 
-  pages:{
-    signIn: '/auth/signin',
+  pages: {
+    signIn: "/auth/signin",
   },
   callbacks: {
- 
-    async signIn({ user: { id, name, image, email },account,profile ,credentials}) {
-      console.log("signIn 까지옴")
+    async signIn({
+      user: { id, name, image, email },
+      account,
+      profile,
+      credentials,
+    }) {
+      console.log("signIn 까지옴");
       if (!email) {
         return false;
       }
-      if(account?.type == "oauth"){
-        userContent =   await getUserEmailOAuth(email);
-        if(userContent===null&&undefined){
-          return false
-        } 
+      if (account?.type == "oauth") {
+        userContent = await getUserEmailOAuth(email);
+        if (userContent === null && undefined) {
+          return false;
+        }
       }
-      console.log("account ")
-      console.log(account)
-      console.log(account?.type)
-if(account?.type == "credentials"){
-  console.log("credentials까지옴")
-// console.log
+      console.log("account ");
+      console.log(account);
+      console.log(account?.type);
+      if (account?.type == "credentials") {
+        console.log("credentials까지옴");
+        // console.log
 
-// console.log("credentials")
-if (credentials && credentials.email && credentials.password) {
-  console.log("if문까지옴")
-  userContent =   await getUserEmail(credentials.email as string, credentials.password as string);
-  console.log("callbackuserContent")
-console.log(userContent)
-console.log("callbackuserContent")
-}
+        // console.log("credentials")
+        if (credentials && credentials.email && credentials.password) {
+          console.log("if문까지옴");
+          userContent = await getUserEmail(
+            credentials.email as string,
+            credentials.password as string
+          );
+          console.log("callbackuserContent");
+          console.log(userContent);
+          console.log("callbackuserContent");
+        }
 
-if(userContent==null==undefined){
-  return false;
-}
-console.log("callbackuserContent")
-console.log(userContent)
-console.log("callbackuserContent")
+        if ((userContent == null) == undefined) {
+          return false;
+        }
+        console.log("callbackuserContent");
+        console.log(userContent);
+        console.log("callbackuserContent");
+      }
 
-}
-
-  
       return true;
     },
-    async session({ session,token}) {
+    async session({ session, token }) {
       const user = session?.user;
-      // console.log("userContent" )
-      // console.log(userContent )
-      // console.log("userContent" )
-      // console.log("sessiontoken")
-      // console.log(token)
-      // console.log("sessiontoken")
-        session.user = {
-          ...user,
 
-          username: user.email?.split('@')[0] || '',
-         id:token._idx as string,
-         name:token.name as string,
-         image:token.image as string,
-        };
-      
-      
-     
-      
-      // console.log("session")
-      // console.log(session)
+      session.user = {
+        ...user,
+
+        username: user.email?.split("@")[0] || "",
+        id: token._idx as string,
+        name: token.name as string,
+        image: token.image as string,
+      };
+
       return session;
     },
     async jwt({ token, user }) {
-
       if (user) {
         token.id = user.id;
-        token.username = user.email?.split('@')[0] || '';
-      
+        token.username = user.email?.split("@")[0] || "";
       }
 
-      if(userContent !== null){
-        token.lecture =  userContent[0].lecture;
-        token.live = userContent[0].live
-        token._idx =userContent?.[0]._id,
-        token.name =userContent?.[0].name,
-        token.image =userContent?.[0].image
+      if (userContent !== null) {
+        token.lecture = userContent[0].lecture;
+        token.live = userContent[0].live;
+        (token._idx = userContent?.[0]._id),
+          (token.name = userContent?.[0].name),
+          (token.image = userContent?.[0].image);
       }
-//       console.log("tokentoken")
-//       console.log("tokentoken")
-//  console.log(token)
-//  console.log("tokentoken")
+
       return token;
     },
-  
-  }
-
-  
+  },
 };
 export default NextAuth(authOptions);
-
-
-

@@ -1,5 +1,5 @@
-import { configureStore } from '@reduxjs/toolkit';
-import pdfReducer from '@/slices/pdfSlice';
+import { configureStore } from "@reduxjs/toolkit";
+import pdfReducer from "@/slices/pdfSlice";
 
 export function makeStore() {
   return configureStore({

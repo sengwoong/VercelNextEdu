@@ -1,18 +1,18 @@
-import { getToken } from 'next-auth/jwt';
-import { NextRequest, NextResponse } from 'next/server';
+import { getToken } from "next-auth/jwt";
+import { NextRequest, NextResponse } from "next/server";
 
 export async function middleware(req: NextRequest) {
   const token = await getToken({ req });
 
   if (!token) {
-    if (req.nextUrl.pathname.startsWith('/api')) {
-      return new NextResponse('Authentication Error', { status: 401 });
+    if (req.nextUrl.pathname.startsWith("/api")) {
+      return new NextResponse("Authentication Error", { status: 401 });
     }
 
     const { pathname, search, origin, basePath } = req.nextUrl;
     const signInUrl = new URL(`${basePath}/auth/signin`, origin);
     signInUrl.searchParams.append(
-      'callbackUrl',
+      "callbackUrl",
       `${basePath}${pathname}${search}`
     );
     return NextResponse.redirect(signInUrl);
@@ -23,14 +23,15 @@ export async function middleware(req: NextRequest) {
 
 export const config = {
   matcher: [
-    '/home/new',
-    '/home',
-    '/home/api/bookmarks',
-    '/home/api/comments',
-    '/home/api/likes',
-    '/home/api/follow',
-    '/home/api/me',
-    '/home/api/posts/:path*',
-    '/StudyRoom/a',
+    "/",
+    "/home/new",
+    "/home",
+    "/home/api/bookmarks",
+    "/home/api/comments",
+    "/home/api/likes",
+    "/home/api/follow",
+    "/home/api/me",
+    "/home/api/posts/:path*",
+    "/StudyRoom/a",
   ],
 };

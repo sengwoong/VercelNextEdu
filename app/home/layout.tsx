@@ -1,17 +1,15 @@
-
-import Navbar from '@/components/LoginInput/AuthNavbar';
-import TransitionEffect from '@/components/PageEffect/TransitionEffect';
-import { Metadata } from 'next';
-
+//기본적이게 모두 로드할 레이아웃입니다.
+import Navbar from "@/components/LoginInput/AuthNavbar";
+import TransitionEffect from "@/components/PageEffect/TransitionEffect";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    default: 'Instantgram',
-    template: 'Instantgram | %s',
+    default: "Instantgram",
+    template: "Instantgram | %s",
   },
-  description: 'Instantgram Photos',
+  description: "Instantgram Photos",
 };
-
 
 export default function RootLayout({
   children,
@@ -23,14 +21,12 @@ export default function RootLayout({
       <head />
 
       <body>
+        <Navbar></Navbar>
+        {children}
 
-      <Navbar></Navbar>
-{children}
-
-     
-       <div id='portal'></div>
+        <div id="portal"></div>
       </body>
     </html>
   );
-  // 
+  //
 }

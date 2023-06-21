@@ -1,15 +1,16 @@
+//로그인로직입니다.
 
-import Signin from '@/components/LoginInput/Sigin';
-import Auth from '@/components/LoginInput/loginpage';
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
-import { Metadata } from 'next';
-import { getSession } from 'next-auth/react';
-import { getProviders } from 'next-auth/react';
-import { redirect } from 'next/navigation';
+import Signin from "@/components/LoginInput/Sigin";
+import Auth from "@/components/LoginInput/loginpage";
+import { authOptions } from "@/pages/api/auth/[...nextauth]";
+import { Metadata } from "next";
+import { getSession } from "next-auth/react";
+import { getProviders } from "next-auth/react";
+import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: 'Signin',
-  description: 'Signup or Login to Instantgram',
+  title: "Signin",
+  description: "Signup or Login to Instantgram",
 };
 
 type Props = {
@@ -20,12 +21,11 @@ type Props = {
 
 export default async function SignPage({
   searchParams: { callbackUrl },
-  
 }: Props) {
   const session = await getSession();
 
   if (session) {
-    redirect('/home');
+    redirect("/home");
   }
 
   const providers = await getProviders();
@@ -35,8 +35,10 @@ export default async function SignPage({
 
   return (
     <section>
-      <Auth provpassworders={providersArr} callbackUrl={callbackUrl ?? '/home'} />
-      
+      <Auth
+        provpassworders={providersArr}
+        callbackUrl={callbackUrl ?? "/home"}
+      />
     </section>
   );
 }

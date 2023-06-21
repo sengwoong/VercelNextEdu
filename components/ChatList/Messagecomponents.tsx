@@ -1,11 +1,11 @@
-import { useContext, useEffect, useRef } from "react";
+// 메세지를 보여줍니다
 
-import { useUnderScrollerInChat } from '@/components/ChatList/useUnderScrollerInChat';
+import { useContext, useEffect, useRef } from "react";
+import { useUnderScrollerInChat } from "@/components/ChatList/useUnderScrollerInChat";
 import { AuthUser } from "@/model/user";
 import Avatar from "../LoginInput/Avatar";
 import { usePathname } from "next/navigation";
 import { Message } from "@/types/typing";
-
 type Props = {
   message: Message;
   user: AuthUser | undefined;
@@ -18,7 +18,7 @@ function Messagecomponents({ message, user }: Props) {
 
   let isUser = false;
   let isMe = false;
-  const ParamUserId = pathName!.split('/')[2];
+  const ParamUserId = pathName!.split("/")[2];
 
   if (user) {
     const { name: SessionName } = user;

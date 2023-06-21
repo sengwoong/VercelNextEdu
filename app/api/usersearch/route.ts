@@ -3,8 +3,9 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
+
+//모든유저를들고옵니다.
 export async function GET(req: NextRequest) {
-  console.log("req");
-  console.log(req);
+
   return searchUsers().then((data) => NextResponse.json(data));
 }

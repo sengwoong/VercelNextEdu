@@ -2,7 +2,7 @@
 import {  createPost, getFollowingPostsOf } from '@/service/posts';
 import { withSessionUser } from '@/utils/session';
 import { NextResponse, NextRequest } from 'next/server';
-
+//유저의 모든포스트를 가져옵니다.
 export async function GET() {
   return withSessionUser(async (user) =>
 
@@ -11,6 +11,7 @@ export async function GET() {
   );
 }
 
+// 유저의 포스트를 작성합니다.
 export async function POST(req: NextRequest) {
   return withSessionUser(async (user) => {
     const form = await req.formData();

@@ -1,6 +1,6 @@
-import { authOptions } from '@/pages/api/auth/[...nextauth]';
-import { getServerSession } from 'next-auth';
-import { AuthUser } from '@/model/user';
+import { authOptions } from "@/pages/api/auth/[...nextauth]";
+import { getServerSession } from "next-auth";
+import { AuthUser } from "@/model/user";
 
 export async function withSessionUser(
   handler: (user: AuthUser) => Promise<Response>
@@ -11,7 +11,7 @@ export async function withSessionUser(
   // console.log("utilsSessionsUser")
   // console.log(user)
   if (!user) {
-    return new Response('Authentication Error', { status: 401 });
+    return new Response("Authentication Error", { status: 401 });
   }
 
   return handler(user);

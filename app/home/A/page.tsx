@@ -1,6 +1,7 @@
-"use client"
+"use client";
 
-
+// 너무 길어서 벨로그에 참조
+// 화상 강의 페이지입니다.
 
 import React, { useEffect, useRef, useState } from "react";
 import { io, Socket } from "socket.io-client";
@@ -108,11 +109,14 @@ const VideoCall: React.FC = () => {
       ScreenShareRef.current = io("localhost:8080");
 
       if (ScreenShareRef.current) {
-        ScreenShareRef.current.on("all_users", (allUsers: { length: number }) => {
-          if (allUsers.length > 0) {
-            setIsWaiting(false);
+        ScreenShareRef.current.on(
+          "all_users",
+          (allUsers: { length: number }) => {
+            if (allUsers.length > 0) {
+              setIsWaiting(false);
+            }
           }
-        });
+        );
 
         ScreenShareRef.current.on("getOffer", (sdp: RTCSessionDescription) => {
           createAnswer(sdp);
@@ -166,18 +170,17 @@ const VideoCall: React.FC = () => {
       <div className="text-center">나의화면</div>
       <video
         id="myvideo"
-      className="h-2/5 w-2/5 m-auto border-2 border-violet-500"
+        className="h-2/5 w-2/5 m-auto border-2 border-violet-500"
         ref={FirstVideosRef}
         autoPlay
       />
-      <div className=" text-center" >미러링</div>
+      <div className=" text-center">미러링</div>
       <video
         id="remotevideo"
         className="h-2/5 w-2/5 m-auto border-2 border-violet-500"
         ref={SecundVideoRef}
         autoPlay
       />
-       
     </div>
   );
 };

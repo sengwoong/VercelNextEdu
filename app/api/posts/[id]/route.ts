@@ -5,20 +5,7 @@ import { withSessionUser } from '@/utils/session';
 import { getServerSession } from 'next-auth';
 import { NextRequest, NextResponse } from 'next/server';
 
-// type Context = {
-//   params: {
-//     id: string;
-//   }};
-// export async function GET(request:NextResponse,context:Context) {
-//   const session = await getServerSession(authOptions);
-//   const user = session?.user;
-
-//   if (!user) {
-//     return new Response('Authentication Error', { status: 401 });
-//   }
-
-//   return getPost(context.params.id).then((data) => NextResponse.json(data));
-// }
+//파람에서 값을 들고와서검색합니다.
 type Context = {
   params: { id: string };
 };

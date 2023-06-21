@@ -1,3 +1,4 @@
+// 채팅창에서 채팅을 적고 클릭하여 보내는로직입니다.
 import { FormEvent, useContext, useRef, useState } from "react";
 import useSWR, { mutate } from "swr";
 import { v4 as uuid } from "uuid";
@@ -6,12 +7,14 @@ import { AuthUser } from "@/model/user";
 import { useUnderScrollerInChat } from "@/components/ChatList/useUnderScrollerInChat";
 import fetcher from "@/utils/fetchGetMessages";
 import { Message } from "@/types/typing";
+import { uploadMessageToUpstash } from "./ChatInputFetch";
 
 type Props = {
   user: AuthUser | undefined;
 };
 
 function ChatInput({ user }: Props) {
+  // send 를 누를때마다
   const { counter, setCounter } = useContext(useUnderScrollerInChat);
   const [input, setInput] = useState("");
   const { data: messages } = useSWR("api/addMessage", fetcher);
@@ -21,7 +24,7 @@ function ChatInput({ user }: Props) {
     return <div>로그인중</div>;
   }
 
-  const addMessage = async (e: FormEvent  <HTMLFormElement>) => {
+  const addMessage = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!input) return;
 
@@ -39,15 +42,9 @@ function ChatInput({ user }: Props) {
 
     setInput("");
 
-    const uploadMessageToUpstash = async () => {
-      await fetch("/api/addMessage", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message }),
-      });
-    };
+    // 패치로 보내보았습니다.
 
-    await uploadMessageToUpstash();
+    await uploadMessageToUpstash(message);
     setCounter((counter) => counter + 1);
     mutate("api/addMessage");
   };

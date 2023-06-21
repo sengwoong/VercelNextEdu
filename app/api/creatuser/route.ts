@@ -3,6 +3,7 @@ import {   createUser } from '@/service/posts';
 
 import { NextResponse, NextRequest } from 'next/server';
 
+//유저를 회원가입하는로직입니다.
 
 export async function POST(req: NextRequest) {
 

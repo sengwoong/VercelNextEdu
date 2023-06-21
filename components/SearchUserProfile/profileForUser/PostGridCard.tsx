@@ -1,12 +1,11 @@
-import PostDetail from '@/components/HomPage/PostCard/Postmodal/PostDetail';
-import PostModal from '@/components/HomPage/PostCard/Postmodal/PostModal';
-import ModalPortal from '@/components/ui/ModalPortal';
+import PostDetail from "@/components/HomPage/PostCard/Postmodal/PostDetail";
+import PostModal from "@/components/HomPage/PostCard/Postmodal/PostModal";
+import ModalPortal from "@/components/ui/ModalPortal";
 
-import { SimplePost } from '@/model/post';
-import { signIn, useSession } from 'next-auth/react';
-import Image from 'next/image';
-import { useState } from 'react';
-
+import { SimplePost } from "@/model/post";
+import { signIn, useSession } from "next-auth/react";
+import Image from "next/image";
+import { useState } from "react";
 
 type Props = {
   post: SimplePost;
@@ -23,13 +22,13 @@ export default function PostGridCard({ post, priority = false }: Props) {
     setOpenModal(true);
   };
   return (
-    <div className='relative w-full aspect-square'>
+    <div className="relative w-full aspect-square">
       <Image
-        className='object-cover'
+        className="object-cover"
         src={image}
         alt={`photo by ${username}`}
         fill
-        sizes='650px'
+        sizes="650px"
         priority={priority}
         onClick={handleOpenPost}
       />
